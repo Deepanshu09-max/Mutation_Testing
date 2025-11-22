@@ -1,0 +1,58 @@
+# Compiled class files
+*.class
+
+# Package files
+*.jar
+*.war
+*.ear
+
+# Maven build directory
+target/
+
+# IDE specific files
+.vscode/
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# VS Code settings
+.settings/
+.classpath
+.project
+
+# OS specific files
+.DS_Store
+Thumbs.db
+
+# Log files
+*.log
+
+# Submission package (don't push to GitHub)
+*.zip
+*.tar.gz
+*.tar
+
+# Project assignment files (don't need on GitHub)
+CSE731-project-details-T1-2025-26.pdf
+CSE731-Project-Details.md
+
+# Viva preparation (optional - keep local)
+VIVA_PREPARATION.md
+
+# Test coverage reports (generated files)
+target/site/
+target/pit-reports/
+
+# Maven wrapper
+.mvn/wrapper/maven-wrapper.jar
+
+# Backup files
+*.bak
+*.swp
+*.swo
+*~
+
+# Temporary files
+*.tmp
+*.temp
