@@ -180,13 +180,13 @@ Total Files: 10 Java files
 
 UNIT TEST RESULTS:
 ------------------
-✓ CalculatorTest:            7/7 tests passed
-✓ LoanCalculatorTest:        30/30 tests passed
-✓ InvestmentCalculatorTest:  40/40 tests passed
-✓ AccountManagerTest:        38/38 tests passed
-✓ TransactionValidatorTest:  53/53 tests passed
+CalculatorTest:            7/7 tests passed
+LoanCalculatorTest:        30/30 tests passed
+InvestmentCalculatorTest:  40/40 tests passed
+AccountManagerTest:        38/38 tests passed
+TransactionValidatorTest:  53/53 tests passed
 ------------------
-TOTAL:                       168/168 tests passed (100%)
+TOTAL:                     168/168 tests passed (100%)
 
 
 MUTATION TESTING RESULTS:
@@ -215,34 +215,13 @@ Integration Mutations: ~168 (32% of total mutations)
 Integration Kill Rate: ~82%
 
 ================================================================================
-6. KEY FEATURES DEMONSTRATED
+6. KEY FEATURES
 ================================================================================
 
-1. COMPREHENSIVE TEST COVERAGE
-   - 96% line coverage across all classes
-   - 168 tests covering normal, edge, and error cases
-   - Boundary value testing for limits and thresholds
-
-2. MUTATION TESTING EXCELLENCE
-   - 79% mutation score exceeds industry standard (70-75%)
-   - 9 different mutation operators applied
-   - Both unit and integration level mutations tested
-
-3. INTEGRATION TESTING
-   - Cross-class method invocations tested
-   - Method chaining and call sequences validated
-   - Contract compliance between components verified
-
-4. CODE QUALITY
-   - Clean separation of concerns
-   - Meaningful class and method names
-   - Comprehensive JavaDoc documentation
-   - Proper exception handling
-
-5. REALISTIC DOMAIN
-   - Banking domain with practical use cases
-   - Real-world business logic complexity
-   - Security considerations (PIN validation, transaction limits)
+1. Test Coverage: 96% line coverage with 168 unit tests
+2. Mutation Testing: 79% mutation score with 9 operators
+3. Integration Testing: Cross-class method calls tested
+4. Banking Domain: Loan calculations, account management, transaction validation
 
 ================================================================================
 7. TEAM MEMBER CONTRIBUTIONS
@@ -289,15 +268,15 @@ ACHIEVED SCORE: 79%
 
 SCORE BREAKDOWN BY OPERATOR:
 -----------------------------
-InvertNegsMutator:              100% (1/1)     ★★★★★
-EmptyObjectReturnValsMutator:   100% (5/5)     ★★★★★
-PrimitiveReturnsMutator:         98% (40/41)   ★★★★★
-NegateConditionalsMutator:       97% (153/158) ★★★★★
-BooleanFalseReturnValsMutator:   96% (23/24)   ★★★★☆
-BooleanTrueReturnValsMutator:    91% (42/46)   ★★★★☆
-MathMutator:                     84% (113/135)  ★★★★☆
-IncrementsMutator:               83% (5/6)      ★★★★☆
-ConditionalsBoundaryMutator:     25% (26/102)   ★★☆☆☆
+InvertNegsMutator:              100% (1/1)
+EmptyObjectReturnValsMutator:   100% (5/5)
+PrimitiveReturnsMutator:         98% (40/41)
+NegateConditionalsMutator:       97% (153/158)
+BooleanFalseReturnValsMutator:   96% (23/24)
+BooleanTrueReturnValsMutator:    91% (42/46)
+MathMutator:                     84% (113/135)
+IncrementsMutator:               83% (5/6)
+ConditionalsBoundaryMutator:     25% (26/102)
 
 
 SCORE BREAKDOWN BY CLASS:
@@ -333,17 +312,10 @@ WHY SOME MUTATIONS SURVIVED:
 10. GITHUB REPOSITORY
 ================================================================================
 
-[TO BE FILLED BY STUDENT]
+Repository URL: https://github.com/Deepanshu09-max/Mutation_Testing
 
-Repository URL: https://github.com/[username]/[repository-name]
-
-The repository should contain:
-- Complete source code (src/ directory)
-- Test files (test/ directory)
-- Maven configuration (pom.xml)
-- Documentation (README.txt, MUTATION_ANALYSIS.md)
-- Git history showing incremental development
-- Screenshots of PIT reports (optional: screenshots/ directory)
+The repository contains source code, tests, Maven configuration, documentation,
+and screenshots of PIT reports.
 
 ================================================================================
 11. SCREENSHOTS LOCATION
@@ -361,54 +333,25 @@ target/pit-reports/index.html
 12. ADDITIONAL NOTES
 ================================================================================
 
-IMPORTANT OBSERVATIONS:
------------------------
-1. The 79% mutation score demonstrates strong test quality
-2. Integration testing verified through cross-class mutation propagation
-3. High kill rates (97%+) for conditional and return mutations show thorough testing
-4. Low boundary mutation kill rate (25%) is common and acceptable for this scope
-5. 96% line coverage ensures most code paths are tested
+The 79% mutation score indicates good test quality. Integration testing was
+verified through cross-class mutations. The low boundary mutation kill rate
+(25%) is common in mutation testing projects.
 
-FUTURE IMPROVEMENTS:
--------------------
-1. Add boundary value tests to improve ConditionalsBoundaryMutator score
-2. Use stricter floating-point assertion tolerances
-3. Add integration tests for more complex workflows
-4. Implement parameterized tests for repeated test patterns
-5. Consider additional mutation operators (if PIT plugins available)
-
-KNOWN LIMITATIONS:
------------------
-1. Some mathematical mutations survive due to formula complexity
-2. Boundary mutations have lower kill rate (acceptable for educational project)
-3. Some private methods tested only indirectly through public methods
-4. Floating-point precision can mask certain arithmetic mutations
+Some mutations survived due to complex formulas and floating-point precision.
+This is acceptable for the project scope.
 
 ================================================================================
-13. FREQUENTLY ASKED QUESTIONS
+13. NOTES ON MUTATION SCORE
 ================================================================================
 
-Q1: Why is the ConditionalsBoundaryMutator score low (25%)?
-A1: This is common in mutation testing. Boundary mutations are difficult to kill
-    without extensive edge case testing. Many tests use ranges rather than exact
-    boundary values. This is acceptable for a project of this scope.
+The ConditionalsBoundaryMutator has a lower score (25%) which is typical for
+mutation testing projects. Boundary mutations are harder to detect without
+extensive edge case testing.
 
-Q2: What is the difference between unit and integration level mutations?
-A2: Unit-level mutations affect single method logic (e.g., arithmetic within one
-    method). Integration-level mutations affect calls between classes/methods
-    (e.g., Calculator.add() called by LoanCalculator).
+Unit-level mutations affect logic within a single method, while integration-level
+mutations test interactions between classes.
 
-Q3: How long does mutation testing take?
-A3: Approximately 40-45 seconds for all 518 mutations. This scales with the
-    number of tests and mutations.
-
-Q4: Can I improve the mutation score further?
-A4: Yes! Add more boundary value tests, use stricter assertions, and ensure
-    100% branch coverage. Potential to reach 85-90% with additional work.
-
-Q5: Are there any equivalent mutants?
-A5: Yes, some survived mutations may be equivalent (produce identical behavior).
-    Manual analysis would be needed to identify these.
+Mutation testing took approximately 40-45 seconds for 518 mutations.
 
 ================================================================================
 14. CONTACT INFORMATION

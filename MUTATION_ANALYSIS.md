@@ -1,15 +1,8 @@
-# Mutation Testing Analysis Report
+# Mutation Testing Analysis
 
-**Project:** CSE731 Mutation Testing Project  
-**Date:** November 18, 2025  
-**Final Mutation Score:** 79% (408/518 mutants killed)  
-**Line Coverage:** 96% (373/387 lines)
-
----
-
-## Executive Summary
-
-This project demonstrates comprehensive mutation testing on a Java banking application with 5 main classes (1063 lines of code) and 168 unit tests. The mutation testing tool PIT was used to generate 518 mutations across 9 different mutation operators, achieving a 79% mutation score which indicates strong test quality.
+This document contains analysis of mutation testing performed on the banking application.
+The project has 1063 lines of code across 5 classes with 168 unit tests. PIT generated
+518 mutations using 9 different operators, achieving 79% mutation score and 96% line coverage.
 
 ---
 
@@ -380,57 +373,36 @@ Tests Executed: 848 (1.64 tests per mutation)
 
 ### 4.2 Per-Operator Performance
 
-| Operator                      | Generated | Killed | Kill Rate | Strength |
-| ----------------------------- | --------- | ------ | --------- | -------- |
-| InvertNegsMutator             | 1         | 1      | 100%      | ★★★★★    |
-| EmptyObjectReturnValsMutator  | 5         | 5      | 100%      | ★★★★★    |
-| PrimitiveReturnsMutator       | 41        | 40     | 98%       | ★★★★★    |
-| NegateConditionalsMutator     | 158       | 153    | 97%       | ★★★★★    |
-| BooleanFalseReturnValsMutator | 24        | 23     | 96%       | ★★★★☆    |
-| BooleanTrueReturnValsMutator  | 46        | 42     | 91%       | ★★★★☆    |
-| MathMutator                   | 135       | 113    | 84%       | ★★★★☆    |
-| IncrementsMutator             | 6         | 5      | 83%       | ★★★★☆    |
-| ConditionalsBoundaryMutator   | 102       | 26     | 25%       | ★★☆☆☆    |
+| Operator                      | Generated | Killed | Kill Rate |
+| ----------------------------- | --------- | ------ | --------- |
+| InvertNegsMutator             | 1         | 1      | 100%      |
+| EmptyObjectReturnValsMutator  | 5         | 5      | 100%      |
+| PrimitiveReturnsMutator       | 41        | 40     | 98%       |
+| NegateConditionalsMutator     | 158       | 153    | 97%       |
+| BooleanFalseReturnValsMutator | 24        | 23     | 96%       |
+| BooleanTrueReturnValsMutator  | 46        | 42     | 91%       |
+| MathMutator                   | 135       | 113    | 84%       |
+| IncrementsMutator             | 6         | 5      | 83%       |
+| ConditionalsBoundaryMutator   | 102       | 26     | 25%       |
 
 ### 4.3 Why Mutations Survived
 
 **ConditionalsBoundaryMutator (75 survived):**
 
-- Lack of boundary value testing (testing at exactly 0, exact limits)
+- Tests didn't check exact boundary values (= 0, exact limits)
 - Tests used ranges like `> 0` but didn't test `== 0` separately
-- Recommendation: Add more edge case tests
+- More edge case tests needed
 
 **MathMutator (22 survived):**
 
-- Complex formulas where mutations still produce "reasonable" results
-- Floating-point calculations where precision differences are masked
-- Recommendation: Add more precise assertion checks with tighter tolerances
+- Complex formulas where mutations still produce acceptable results
+- Floating-point precision masks some mutations
+- Tighter assertion tolerances could help
 
 **NegateConditionalsMutator (4 survived):**
 
 - Some conditional branches not fully tested
 - Rare edge cases in nested conditionals
-- Recommendation: Achieve 100% branch coverage
-
----
-
-## 5. Test Quality Assessment
-
-### 5.1 Strong Points
-
-✅ 96% line coverage achieved  
-✅ 79% mutation score exceeds industry standard (70-75%)  
-✅ 97% kill rate for NegateConditionalsMutator shows excellent conditional testing  
-✅ 98% kill rate for PrimitiveReturnsMutator shows thorough return value testing  
-✅ Integration points between classes are well-tested  
-✅ 168 tests provide comprehensive coverage
-
-### 5.2 Areas for Improvement
-
-⚠️ Boundary condition testing needs improvement (25% kill rate)  
-⚠️ Add more edge case tests for zero values and limits  
-⚠️ Some complex mathematical operations need tighter assertion tolerances  
-⚠️ Consider adding tests for extreme values (MIN_VALUE, MAX_VALUE)
 
 ---
 
@@ -477,48 +449,10 @@ Tests that kill integration mutations verify:
 
 ## 7. Conclusion
 
-This mutation testing analysis demonstrates:
-
-1. **High Code Quality:** 79% mutation score indicates strong test suite
-2. **Good Coverage:** 96% line coverage with meaningful assertions
-3. **Integration Testing:** ~32% of mutations test integration points
-4. **Diverse Operators:** 9 mutation operators provide comprehensive mutation coverage
-5. **Room for Growth:** Boundary testing improvements could push score to 85%+
-
-The project successfully demonstrates both unit-level and integration-level mutation testing, meeting the requirements for a comprehensive mutation testing study.
+The mutation testing achieved a 79% mutation score with 96% line coverage. The project
+demonstrates both unit-level and integration-level mutation testing with 9 different
+mutation operators. Integration mutations account for approximately 32% of the total,
+showing cross-class testing. Boundary condition testing could be improved to increase
+the overall score.
 
 ---
-
-## 8. Tools and Technologies Used
-
-- **Java:** 11
-- **Build Tool:** Maven 3.9.10
-- **Testing Framework:** JUnit 5.9.3
-- **Mutation Testing:** PIT (pitest-maven) 1.15.3
-- **IDE:** VS Code
-- **Version Control:** Git (recommended for submission)
-
----
-
-## 9. How to Run
-
-### Run Tests
-
-```bash
-mvn test
-```
-
-### Run Mutation Testing
-
-```bash
-mvn pitest:mutationCoverage
-```
-
-### View Report
-
-Open `target/pit-reports/index.html` in a browser
-
----
-
-**Report Generated:** November 18, 2025  
-**Next Deadline:** November 25, 2025, 6:00 PM
