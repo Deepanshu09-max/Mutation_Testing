@@ -3,8 +3,7 @@ CSE731 SOFTWARE TESTING - MUTATION TESTING PROJECT
 ================================================================================
 
 PROJECT TITLE: Banking System Mutation Testing Study
-SUBMISSION DATE: November 25, 2025
-INSTITUTION: IIT Bangalore
+Authors: Deepanshu Saini[MT2024039] and Nakul Siwach[MT2024096]
 
 ================================================================================
 1. PROJECT DESCRIPTION
@@ -66,13 +65,6 @@ INTEGRATION-LEVEL OPERATORS (3):
    - Example: Calculator.subtract() mutation affects PIN validation
    - Integration points: 50+ mutations across 4 class pairs
 
-
-ADDITIONAL OPERATORS:
----------------------
-7. IncrementsMutator - 6 generated, 5 killed (83%)
-8. InvertNegsMutator - 1 generated, 1 killed (100%)
-9. EmptyObjectReturnValsMutator - 5 generated, 5 killed (100%)
-
 ================================================================================
 3. HOW TO RUN THE PROJECT
 ================================================================================
@@ -129,15 +121,6 @@ The report shows:
 - Per-method mutation details
 - Survived vs killed mutations
 - Line-by-line mutation coverage
-
-
-OPTIONAL: Run Specific Test Class
-----------------------------------
-mvn test -Dtest=CalculatorTest
-mvn test -Dtest=LoanCalculatorTest
-mvn test -Dtest=InvestmentCalculatorTest
-mvn test -Dtest=AccountManagerTest
-mvn test -Dtest=TransactionValidatorTest
 
 ================================================================================
 4. PROJECT STRUCTURE
@@ -215,32 +198,23 @@ Integration Mutations: ~168 (32% of total mutations)
 Integration Kill Rate: ~82%
 
 ================================================================================
-6. KEY FEATURES
+6. TEAM MEMBER CONTRIBUTIONS
 ================================================================================
 
-1. Test Coverage: 96% line coverage with 168 unit tests
-2. Mutation Testing: 79% mutation score with 9 operators
-3. Integration Testing: Cross-class method calls tested
-4. Banking Domain: Loan calculations, account management, transaction validation
-
-================================================================================
-7. TEAM MEMBER CONTRIBUTIONS
-================================================================================
-
-Team Member 1: Nakul Siwach (MT2024096)
+Team Member 1: Deepanshu Saini (MT2024039)      
 - Responsibilities: Source code development (Calculator, LoanCalculator, InvestmentCalculator classes)
 - Test case design and implementation for Calculator and LoanCalculator
 - PIT mutation testing configuration and execution
 - Documentation (README.txt and MUTATION_ANALYSIS.md)
 
-Team Member 2: Deepanshu Saini (MT2024039)
+Team Member 2: Nakul Siwach (MT2024096)      
 - Responsibilities: Source code development (AccountManager, TransactionValidator classes)
 - Test case design and implementation for AccountManager and TransactionValidator
 - Bug fixes and test debugging
 - Screenshots and final submission preparation
 
 ================================================================================
-8. TOOLS AND TECHNOLOGIES
+7. TOOLS AND TECHNOLOGIES
 ================================================================================
 
 Programming Language:    Java 11
@@ -260,56 +234,7 @@ Dependencies:
 - junit-jupiter-engine: 5.9.3
 
 ================================================================================
-9. MUTATION SCORE ANALYSIS
-================================================================================
-
-TARGET SCORE: 75-80%
-ACHIEVED SCORE: 79%
-
-SCORE BREAKDOWN BY OPERATOR:
------------------------------
-InvertNegsMutator:              100% (1/1)
-EmptyObjectReturnValsMutator:   100% (5/5)
-PrimitiveReturnsMutator:         98% (40/41)
-NegateConditionalsMutator:       97% (153/158)
-BooleanFalseReturnValsMutator:   96% (23/24)
-BooleanTrueReturnValsMutator:    91% (42/46)
-MathMutator:                     84% (113/135)
-IncrementsMutator:               83% (5/6)
-ConditionalsBoundaryMutator:     25% (26/102)
-
-
-SCORE BREAKDOWN BY CLASS:
--------------------------
-Calculator:               ~88% (16/18 mutations killed)
-LoanCalculator:           ~75% (estimated from logs)
-InvestmentCalculator:     ~78% (estimated from logs)
-AccountManager:           ~81% (estimated from logs)
-TransactionValidator:     ~82% (estimated from logs)
-
-
-WHY SOME MUTATIONS SURVIVED:
------------------------------
-1. Boundary Conditions (75 survived)
-   - Tests didn't check exact boundary values (= 0, = limit)
-   - Improvement: Add more edge case tests
-
-2. Mathematical Operations (22 survived)
-   - Complex formulas where mutations produce acceptable results
-   - Floating-point precision masks some mutations
-   - Improvement: Use stricter assertion tolerances
-
-3. Conditional Logic (4 survived)
-   - Some branches in nested conditions not fully tested
-   - Improvement: Achieve 100% branch coverage
-
-4. No Coverage (8 mutations)
-   - Getter/setter methods not directly tested
-   - Private helper methods tested indirectly
-   - Acceptable for this project scope
-
-================================================================================
-10. GITHUB REPOSITORY
+8. GITHUB REPOSITORY
 ================================================================================
 
 Repository URL: https://github.com/Deepanshu09-max/Mutation_Testing
@@ -318,7 +243,7 @@ The repository contains source code, tests, Maven configuration, documentation,
 and screenshots of PIT reports.
 
 ================================================================================
-11. SCREENSHOTS LOCATION
+9. SCREENSHOTS LOCATION
 ================================================================================
 
 Mutation testing screenshots can be found in:
@@ -330,50 +255,24 @@ Alternatively, the full HTML report is available at:
 target/pit-reports/index.html
 
 ================================================================================
-12. ADDITIONAL NOTES
-================================================================================
-
-The 79% mutation score indicates good test quality. Integration testing was
-verified through cross-class mutations. The low boundary mutation kill rate
-(25%) is common in mutation testing projects.
-
-Some mutations survived due to complex formulas and floating-point precision.
-This is acceptable for the project scope.
-
-================================================================================
-13. NOTES ON MUTATION SCORE
-================================================================================
-
-The ConditionalsBoundaryMutator has a lower score (25%) which is typical for
-mutation testing projects. Boundary mutations are harder to detect without
-extensive edge case testing.
-
-Unit-level mutations affect logic within a single method, while integration-level
-mutations test interactions between classes.
-
-Mutation testing took approximately 40-45 seconds for 518 mutations.
-
-================================================================================
-14. CONTACT INFORMATION
+10. CONTACT INFORMATION
 ================================================================================
 
 Team Member 1:
 Student Name: Nakul Siwach
 Roll Number: MT2024096
 Program: MTech in Computer Science
-Course: CSE731 Software Testing
 
 Team Member 2:
 Student Name: Deepanshu Saini
 Roll Number: MT2024039
 Program: MTech in Computer Science
-Course: CSE731 Software Testing
 
 Institution: IIT Bangalore
-Project Submission Date: November 25, 2025, 6:00 PM
+Course: CSE731 Software Testing
 
 ================================================================================
-15. REFERENCES
+11. REFERENCES
 ================================================================================
 
 1. PITest Documentation: https://pitest.org/
