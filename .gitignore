@@ -33,13 +33,6 @@ Thumbs.db
 *.tar.gz
 *.tar
 
-# Project assignment files (don't need on GitHub)
-CSE731-project-details-T1-2025-26.pdf
-CSE731-Project-Details.md
-
-# Viva preparation (optional - keep local)
-VIVA_PREPARATION.md
-
 # Test coverage reports (generated files)
 target/site/
 target/pit-reports/
