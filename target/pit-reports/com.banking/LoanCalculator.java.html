@@ -1,0 +1,3856 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+
+
+<h1>LoanCalculator.java</h1>
+
+<table class="src">
+
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_1'/>
+1
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_1'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>package com.banking;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_2'/>
+2
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_2'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_3'/>
+3
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_3'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>/**</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_4'/>
+4
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_4'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''> * Loan Calculator for calculating EMI, total interest, and amortization schedules</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_5'/>
+5
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_5'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''> */</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_6'/>
+6
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_6'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>public class LoanCalculator {</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_7'/>
+7
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_7'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    </span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_8'/>
+8
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_8'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    private Calculator calculator;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_9'/>
+9
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_9'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    </span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_10'/>
+10
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_10'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    public LoanCalculator() {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_11'/>
+11
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_11'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        this.calculator = new Calculator();</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_12'/>
+12
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_12'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_13'/>
+13
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_13'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    </span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_14'/>
+14
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_14'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    /**</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_15'/>
+15
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_15'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * Calculates monthly EMI (Equated Monthly Installment)</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_16'/>
+16
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_16'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * Formula: EMI = P * r * (1 + r)^n / ((1 + r)^n - 1)</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_17'/>
+17
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_17'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * @param principal Loan amount</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_18'/>
+18
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_18'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * @param annualRate Annual interest rate in percentage</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_19'/>
+19
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_19'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * @param tenureMonths Loan tenure in months</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_20'/>
+20
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_20'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * @return Monthly EMI amount</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_21'/>
+21
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_21'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     */</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_22'/>
+22
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_22'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public double calculateEMI(double principal, double annualRate, int tenureMonths) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_23'/>
+23
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_23'>2</a>
+<span>
+
+1. calculateEMI : changed conditional boundary &rarr; SURVIVED<br/>
+
+2. calculateEMI : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>        if (principal &#60;= 0) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_24'/>
+24
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_24'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>            throw new IllegalArgumentException(&#34;Principal must be positive&#34;);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_25'/>
+25
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_25'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_26'/>
+26
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_26'>2</a>
+<span>
+
+1. calculateEMI : changed conditional boundary &rarr; KILLED<br/>
+
+2. calculateEMI : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        if (annualRate &#60; 0) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_27'/>
+27
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_27'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>            throw new IllegalArgumentException(&#34;Interest rate cannot be negative&#34;);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_28'/>
+28
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_28'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_29'/>
+29
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_29'>2</a>
+<span>
+
+1. calculateEMI : changed conditional boundary &rarr; KILLED<br/>
+
+2. calculateEMI : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        if (tenureMonths &#60;= 0) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_30'/>
+30
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_30'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>            throw new IllegalArgumentException(&#34;Tenure must be positive&#34;);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_31'/>
+31
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_31'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_32'/>
+32
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_32'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        </span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_33'/>
+33
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_33'>1</a>
+<span>
+
+1. calculateEMI : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        if (annualRate == 0) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_34'/>
+34
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_34'>2</a>
+<span>
+
+1. calculateEMI : Replaced double division with multiplication &rarr; KILLED<br/>
+
+2. calculateEMI : replaced double return with 0.0d for com/banking/LoanCalculator::calculateEMI &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            return principal / tenureMonths;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_35'/>
+35
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_35'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_36'/>
+36
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_36'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        </span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_37'/>
+37
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_37'>1</a>
+<span>
+
+1. calculateEMI : Replaced double division with multiplication &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        double monthlyRate = annualRate / (12 * 100);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_38'/>
+38
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_38'>1</a>
+<span>
+
+1. calculateEMI : Replaced double addition with subtraction &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        double power = Math.pow(1 + monthlyRate, tenureMonths);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_39'/>
+39
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_39'>4</a>
+<span>
+
+1. calculateEMI : Replaced double multiplication with division &rarr; KILLED<br/>
+
+2. calculateEMI : Replaced double multiplication with division &rarr; KILLED<br/>
+
+3. calculateEMI : Replaced double division with multiplication &rarr; KILLED<br/>
+
+4. calculateEMI : Replaced double subtraction with addition &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        double emi = principal * monthlyRate * power / (power - 1);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_40'/>
+40
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_40'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        </span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_41'/>
+41
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_41'>3</a>
+<span>
+
+1. calculateEMI : Replaced double multiplication with division &rarr; KILLED<br/>
+
+2. calculateEMI : Replaced double division with multiplication &rarr; KILLED<br/>
+
+3. calculateEMI : replaced double return with 0.0d for com/banking/LoanCalculator::calculateEMI &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return Math.round(emi * 100.0) / 100.0;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_42'/>
+42
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_42'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_43'/>
+43
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_43'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    </span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_44'/>
+44
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_44'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    /**</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_45'/>
+45
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_45'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * Calculates total interest payable over loan tenure</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_46'/>
+46
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_46'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     */</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_47'/>
+47
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_47'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public double calculateTotalInterest(double principal, double annualRate, int tenureMonths) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_48'/>
+48
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_48'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        double emi = calculateEMI(principal, annualRate, tenureMonths);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_49'/>
+49
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_49'>1</a>
+<span>
+
+1. calculateTotalInterest : Replaced double multiplication with division &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        double totalPayment = emi * tenureMonths;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_50'/>
+50
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_50'>4</a>
+<span>
+
+1. calculateTotalInterest : Replaced double subtraction with addition &rarr; KILLED<br/>
+
+2. calculateTotalInterest : Replaced double multiplication with division &rarr; KILLED<br/>
+
+3. calculateTotalInterest : replaced double return with 0.0d for com/banking/LoanCalculator::calculateTotalInterest &rarr; KILLED<br/>
+
+4. calculateTotalInterest : Replaced double division with multiplication &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return Math.round((totalPayment - principal) * 100.0) / 100.0;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_51'/>
+51
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_51'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_52'/>
+52
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_52'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    </span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_53'/>
+53
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_53'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    /**</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_54'/>
+54
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_54'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * Calculates total amount payable (principal + interest)</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_55'/>
+55
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_55'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     */</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_56'/>
+56
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_56'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public double calculateTotalAmount(double principal, double annualRate, int tenureMonths) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_57'/>
+57
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_57'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        double totalInterest = calculateTotalInterest(principal, annualRate, tenureMonths);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_58'/>
+58
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_58'>2</a>
+<span>
+
+1. calculateTotalAmount : replaced double return with 0.0d for com/banking/LoanCalculator::calculateTotalAmount &rarr; KILLED<br/>
+
+2. calculateTotalAmount : Replaced double addition with subtraction &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return principal + totalInterest;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_59'/>
+59
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_59'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_60'/>
+60
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_60'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    </span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_61'/>
+61
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_61'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    /**</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_62'/>
+62
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_62'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * Determines loan eligibility based on income and EMI ratio</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_63'/>
+63
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_63'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * @param monthlyIncome Applicant&#39;s monthly income</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_64'/>
+64
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_64'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * @param emi Proposed EMI amount</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_65'/>
+65
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_65'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * @param existingEMI Existing EMI obligations</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_66'/>
+66
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_66'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * @return true if eligible, false otherwise</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_67'/>
+67
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_67'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     */</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_68'/>
+68
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_68'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public boolean isEligible(double monthlyIncome, double emi, double existingEMI) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_69'/>
+69
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_69'>2</a>
+<span>
+
+1. isEligible : changed conditional boundary &rarr; SURVIVED<br/>
+
+2. isEligible : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>        if (monthlyIncome &#60;= 0) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_70'/>
+70
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_70'>1</a>
+<span>
+
+1. isEligible : replaced boolean return with true for com/banking/LoanCalculator::isEligible &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            return false;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_71'/>
+71
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_71'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_72'/>
+72
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_72'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        </span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_73'/>
+73
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_73'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        double totalEMI = calculator.add((int)emi, (int)existingEMI);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_74'/>
+74
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_74'>2</a>
+<span>
+
+1. isEligible : Replaced double division with multiplication &rarr; KILLED<br/>
+
+2. isEligible : Replaced double multiplication with division &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        double emiRatio = (totalEMI / monthlyIncome) * 100;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_75'/>
+75
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_75'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        </span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_76'/>
+76
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_76'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        // EMI should not exceed 50% of monthly income</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_77'/>
+77
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_77'>2</a>
+<span>
+
+1. isEligible : negated conditional &rarr; KILLED<br/>
+
+2. isEligible : changed conditional boundary &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        if (emiRatio &#62; 50) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_78'/>
+78
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_78'>1</a>
+<span>
+
+1. isEligible : replaced boolean return with true for com/banking/LoanCalculator::isEligible &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            return false;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_79'/>
+79
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_79'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_80'/>
+80
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_80'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        </span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_81'/>
+81
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_81'>1</a>
+<span>
+
+1. isEligible : replaced boolean return with false for com/banking/LoanCalculator::isEligible &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return true;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_82'/>
+82
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_82'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_83'/>
+83
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_83'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    </span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_84'/>
+84
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_84'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    /**</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_85'/>
+85
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_85'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * Calculates maximum loan amount based on income</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_86'/>
+86
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_86'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     */</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_87'/>
+87
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_87'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public double calculateMaxLoanAmount(double monthlyIncome, double annualRate, int tenureMonths) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_88'/>
+88
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_88'>2</a>
+<span>
+
+1. calculateMaxLoanAmount : changed conditional boundary &rarr; SURVIVED<br/>
+
+2. calculateMaxLoanAmount : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>        if (monthlyIncome &#60;= 0) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_89'/>
+89
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_89'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>            throw new IllegalArgumentException(&#34;Income must be positive&#34;);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_90'/>
+90
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_90'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_91'/>
+91
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_91'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        </span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_92'/>
+92
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_92'>1</a>
+<span>
+
+1. calculateMaxLoanAmount : Replaced double multiplication with division &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        double maxEMI = monthlyIncome * 0.5; // 50% of income</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_93'/>
+93
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_93'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        </span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_94'/>
+94
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_94'>1</a>
+<span>
+
+1. calculateMaxLoanAmount : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        if (annualRate == 0) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_95'/>
+95
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_95'>2</a>
+<span>
+
+1. calculateMaxLoanAmount : Replaced double multiplication with division &rarr; KILLED<br/>
+
+2. calculateMaxLoanAmount : replaced double return with 0.0d for com/banking/LoanCalculator::calculateMaxLoanAmount &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            return maxEMI * tenureMonths;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_96'/>
+96
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_96'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_97'/>
+97
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_97'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        </span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_98'/>
+98
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_98'>1</a>
+<span>
+
+1. calculateMaxLoanAmount : Replaced double division with multiplication &rarr; SURVIVED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>        double monthlyRate = annualRate / (12 * 100);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_99'/>
+99
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_99'>1</a>
+<span>
+
+1. calculateMaxLoanAmount : Replaced double addition with subtraction &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        double power = Math.pow(1 + monthlyRate, tenureMonths);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_100'/>
+100
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_100'>4</a>
+<span>
+
+1. calculateMaxLoanAmount : Replaced double subtraction with addition &rarr; SURVIVED<br/>
+
+2. calculateMaxLoanAmount : Replaced double multiplication with division &rarr; SURVIVED<br/>
+
+3. calculateMaxLoanAmount : Replaced double multiplication with division &rarr; SURVIVED<br/>
+
+4. calculateMaxLoanAmount : Replaced double division with multiplication &rarr; SURVIVED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>        double maxPrincipal = maxEMI * (power - 1) / (monthlyRate * power);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_101'/>
+101
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_101'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        </span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_102'/>
+102
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_102'>3</a>
+<span>
+
+1. calculateMaxLoanAmount : Replaced double division with multiplication &rarr; SURVIVED<br/>
+
+2. calculateMaxLoanAmount : Replaced double multiplication with division &rarr; SURVIVED<br/>
+
+3. calculateMaxLoanAmount : replaced double return with 0.0d for com/banking/LoanCalculator::calculateMaxLoanAmount &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>        return Math.round(maxPrincipal * 100.0) / 100.0;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_103'/>
+103
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_103'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_104'/>
+104
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_104'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    </span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_105'/>
+105
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_105'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    /**</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_106'/>
+106
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_106'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * Calculates remaining principal after a certain number of payments</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_107'/>
+107
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_107'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     */</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_108'/>
+108
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_108'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public double calculateRemainingPrincipal(double principal, double annualRate, </span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_109'/>
+109
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_109'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>                                               int tenureMonths, int paidMonths) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_110'/>
+110
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_110'>4</a>
+<span>
+
+1. calculateRemainingPrincipal : negated conditional &rarr; KILLED<br/>
+
+2. calculateRemainingPrincipal : negated conditional &rarr; KILLED<br/>
+
+3. calculateRemainingPrincipal : changed conditional boundary &rarr; KILLED<br/>
+
+4. calculateRemainingPrincipal : changed conditional boundary &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        if (paidMonths &#60; 0 || paidMonths &#62; tenureMonths) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_111'/>
+111
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_111'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>            throw new IllegalArgumentException(&#34;Invalid paid months&#34;);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_112'/>
+112
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_112'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_113'/>
+113
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_113'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        </span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_114'/>
+114
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_114'>1</a>
+<span>
+
+1. calculateRemainingPrincipal : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        if (paidMonths == 0) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_115'/>
+115
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_115'>1</a>
+<span>
+
+1. calculateRemainingPrincipal : replaced double return with 0.0d for com/banking/LoanCalculator::calculateRemainingPrincipal &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            return principal;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_116'/>
+116
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_116'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_117'/>
+117
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_117'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        </span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_118'/>
+118
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_118'>1</a>
+<span>
+
+1. calculateRemainingPrincipal : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        if (paidMonths == tenureMonths) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_119'/>
+119
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_119'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>            return 0.0;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_120'/>
+120
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_120'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_121'/>
+121
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_121'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        </span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_122'/>
+122
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_122'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        double emi = calculateEMI(principal, annualRate, tenureMonths);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_123'/>
+123
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_123'>1</a>
+<span>
+
+1. calculateRemainingPrincipal : Replaced double division with multiplication &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        double monthlyRate = annualRate / (12 * 100);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_124'/>
+124
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_124'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        double remaining = principal;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_125'/>
+125
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_125'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        </span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_126'/>
+126
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_126'>3</a>
+<span>
+
+1. calculateRemainingPrincipal : changed conditional boundary &rarr; SURVIVED<br/>
+
+2. calculateRemainingPrincipal : Changed increment from 1 to -1 &rarr; KILLED<br/>
+
+3. calculateRemainingPrincipal : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>        for (int i = 0; i &#60; paidMonths; i++) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_127'/>
+127
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_127'>1</a>
+<span>
+
+1. calculateRemainingPrincipal : Replaced double multiplication with division &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            double interest = remaining * monthlyRate;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_128'/>
+128
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_128'>1</a>
+<span>
+
+1. calculateRemainingPrincipal : Replaced double subtraction with addition &rarr; SURVIVED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>            double principalPaid = emi - interest;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_129'/>
+129
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_129'>1</a>
+<span>
+
+1. calculateRemainingPrincipal : Replaced double subtraction with addition &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            remaining = remaining - principalPaid;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_130'/>
+130
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_130'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>            </span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_131'/>
+131
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_131'>2</a>
+<span>
+
+1. calculateRemainingPrincipal : changed conditional boundary &rarr; SURVIVED<br/>
+
+2. calculateRemainingPrincipal : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>            if (remaining &#60; 0) {</span></pre></td></tr>
+
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_132'/>
+132
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_132'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='uncovered'><pre><span  class=''>                remaining = 0;</span></pre></td></tr>
+
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_133'/>
+133
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_133'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='uncovered'><pre><span  class=''>                break;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_134'/>
+134
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_134'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>            }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_135'/>
+135
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_135'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_136'/>
+136
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_136'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        </span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_137'/>
+137
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_137'>3</a>
+<span>
+
+1. calculateRemainingPrincipal : Replaced double multiplication with division &rarr; SURVIVED<br/>
+
+2. calculateRemainingPrincipal : replaced double return with 0.0d for com/banking/LoanCalculator::calculateRemainingPrincipal &rarr; KILLED<br/>
+
+3. calculateRemainingPrincipal : Replaced double division with multiplication &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>        return Math.round(remaining * 100.0) / 100.0;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_138'/>
+138
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_138'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_139'/>
+139
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_139'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    </span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_140'/>
+140
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_140'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    /**</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_141'/>
+141
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_141'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * Calculates prepayment penalty based on remaining principal</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_142'/>
+142
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_142'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     */</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_143'/>
+143
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_143'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public double calculatePrepaymentPenalty(double remainingPrincipal, double penaltyPercent) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_144'/>
+144
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_144'>2</a>
+<span>
+
+1. calculatePrepaymentPenalty : changed conditional boundary &rarr; SURVIVED<br/>
+
+2. calculatePrepaymentPenalty : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>        if (remainingPrincipal &#60; 0) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_145'/>
+145
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_145'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>            throw new IllegalArgumentException(&#34;Remaining principal cannot be negative&#34;);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_146'/>
+146
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_146'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_147'/>
+147
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_147'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        </span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_148'/>
+148
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_148'>4</a>
+<span>
+
+1. calculatePrepaymentPenalty : changed conditional boundary &rarr; SURVIVED<br/>
+
+2. calculatePrepaymentPenalty : changed conditional boundary &rarr; KILLED<br/>
+
+3. calculatePrepaymentPenalty : negated conditional &rarr; KILLED<br/>
+
+4. calculatePrepaymentPenalty : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>        if (penaltyPercent &#60; 0 || penaltyPercent &#62; 10) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_149'/>
+149
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_149'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>            throw new IllegalArgumentException(&#34;Penalty percent must be between 0 and 10&#34;);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_150'/>
+150
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_150'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_151'/>
+151
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_151'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        </span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_152'/>
+152
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_152'>2</a>
+<span>
+
+1. calculatePrepaymentPenalty : Replaced double multiplication with division &rarr; KILLED<br/>
+
+2. calculatePrepaymentPenalty : Replaced double division with multiplication &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        double penalty = remainingPrincipal * (penaltyPercent / 100);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_153'/>
+153
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_153'>3</a>
+<span>
+
+1. calculatePrepaymentPenalty : replaced double return with 0.0d for com/banking/LoanCalculator::calculatePrepaymentPenalty &rarr; KILLED<br/>
+
+2. calculatePrepaymentPenalty : Replaced double division with multiplication &rarr; KILLED<br/>
+
+3. calculatePrepaymentPenalty : Replaced double multiplication with division &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return Math.round(penalty * 100.0) / 100.0;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_154'/>
+154
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_154'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_155'/>
+155
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_155'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    </span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_156'/>
+156
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_156'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    /**</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_157'/>
+157
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_157'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * Determines if refinancing is beneficial</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_158'/>
+158
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_158'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     */</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_159'/>
+159
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_159'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public boolean shouldRefinance(double currentRate, double newRate, double remainingPrincipal, </span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_160'/>
+160
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_160'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>                                   int remainingMonths, double refinancingCost) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_161'/>
+161
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_161'>2</a>
+<span>
+
+1. shouldRefinance : changed conditional boundary &rarr; SURVIVED<br/>
+
+2. shouldRefinance : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>        if (newRate &#62;= currentRate) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_162'/>
+162
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_162'>1</a>
+<span>
+
+1. shouldRefinance : replaced boolean return with true for com/banking/LoanCalculator::shouldRefinance &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            return false;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_163'/>
+163
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_163'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_164'/>
+164
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_164'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        </span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_165'/>
+165
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_165'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        double currentEMI = calculateEMI(remainingPrincipal, currentRate, remainingMonths);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_166'/>
+166
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_166'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        double newEMI = calculateEMI(remainingPrincipal, newRate, remainingMonths);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_167'/>
+167
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_167'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        </span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_168'/>
+168
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_168'>1</a>
+<span>
+
+1. shouldRefinance : Replaced double subtraction with addition &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        double monthlySavings = currentEMI - newEMI;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_169'/>
+169
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_169'>1</a>
+<span>
+
+1. shouldRefinance : Replaced double multiplication with division &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        double totalSavings = monthlySavings * remainingMonths;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_170'/>
+170
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_170'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        </span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_171'/>
+171
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_171'>4</a>
+<span>
+
+1. shouldRefinance : changed conditional boundary &rarr; SURVIVED<br/>
+
+2. shouldRefinance : replaced boolean return with true for com/banking/LoanCalculator::shouldRefinance &rarr; KILLED<br/>
+
+3. shouldRefinance : negated conditional &rarr; KILLED<br/>
+
+4. shouldRefinance : replaced boolean return with false for com/banking/LoanCalculator::shouldRefinance &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>        return totalSavings &#62; refinancingCost;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_172'/>
+172
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_172'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_173'/>
+173
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_173'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    </span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_174'/>
+174
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_174'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    /**</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_175'/>
+175
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_175'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * Calculates interest component in a specific EMI</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_176'/>
+176
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_176'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     */</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_177'/>
+177
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_177'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public double calculateInterestInEMI(double remainingPrincipal, double annualRate) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_178'/>
+178
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_178'>2</a>
+<span>
+
+1. calculateInterestInEMI : changed conditional boundary &rarr; SURVIVED<br/>
+
+2. calculateInterestInEMI : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>        if (remainingPrincipal &#60;= 0) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_179'/>
+179
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_179'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>            return 0.0;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_180'/>
+180
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_180'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_181'/>
+181
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_181'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        </span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_182'/>
+182
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_182'>1</a>
+<span>
+
+1. calculateInterestInEMI : Replaced double division with multiplication &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        double monthlyRate = annualRate / (12 * 100);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_183'/>
+183
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_183'>1</a>
+<span>
+
+1. calculateInterestInEMI : Replaced double multiplication with division &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        double interest = remainingPrincipal * monthlyRate;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_184'/>
+184
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_184'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        </span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_185'/>
+185
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_185'>3</a>
+<span>
+
+1. calculateInterestInEMI : Replaced double division with multiplication &rarr; KILLED<br/>
+
+2. calculateInterestInEMI : Replaced double multiplication with division &rarr; KILLED<br/>
+
+3. calculateInterestInEMI : replaced double return with 0.0d for com/banking/LoanCalculator::calculateInterestInEMI &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return Math.round(interest * 100.0) / 100.0;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_186'/>
+186
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_186'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_187'/>
+187
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_187'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    </span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_188'/>
+188
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_188'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    /**</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_189'/>
+189
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_189'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * Calculates principal component in a specific EMI</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_190'/>
+190
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_190'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     */</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_191'/>
+191
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_191'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public double calculatePrincipalInEMI(double emi, double interestComponent) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_192'/>
+192
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_192'>2</a>
+<span>
+
+1. calculatePrincipalInEMI : changed conditional boundary &rarr; SURVIVED<br/>
+
+2. calculatePrincipalInEMI : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>        if (emi &#60; interestComponent) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_193'/>
+193
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_193'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>            throw new IllegalArgumentException(&#34;EMI cannot be less than interest component&#34;);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_194'/>
+194
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_194'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_195'/>
+195
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_195'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        </span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_196'/>
+196
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_196'>4</a>
+<span>
+
+1. calculatePrincipalInEMI : Replaced double multiplication with division &rarr; KILLED<br/>
+
+2. calculatePrincipalInEMI : replaced double return with 0.0d for com/banking/LoanCalculator::calculatePrincipalInEMI &rarr; KILLED<br/>
+
+3. calculatePrincipalInEMI : Replaced double subtraction with addition &rarr; KILLED<br/>
+
+4. calculatePrincipalInEMI : Replaced double division with multiplication &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return Math.round((emi - interestComponent) * 100.0) / 100.0;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_197'/>
+197
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_197'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@629de8_198'/>
+198
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@629de8_198'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>}</span></pre></td></tr>
+
+
+
+<tr><td></td><td></td><td><h2>Mutations</h2></td></tr>
+
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@629de8_23'>23</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@629de8_23'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>calculateEMI<br/><b>Killed by : </b>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testShouldRefinanceLowerRateWithBenefit()]</span></span> negated conditional &rarr; KILLED</p> <p class='SURVIVED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>calculateEMI<br/><b>Killed by : </b>none</span></span> changed conditional boundary &rarr; SURVIVED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@629de8_26'>26</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@629de8_26'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>calculateEMI<br/><b>Killed by : </b>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testCalculateEMIWithZeroInterest()]</span></span> changed conditional boundary &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>calculateEMI<br/><b>Killed by : </b>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testShouldRefinanceLowerRateWithBenefit()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@629de8_29'>29</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@629de8_29'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>calculateEMI<br/><b>Killed by : </b>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testCalculateEMIInvalidTenure()]</span></span> changed conditional boundary &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>calculateEMI<br/><b>Killed by : </b>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testShouldRefinanceLowerRateWithBenefit()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@629de8_33'>33</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@629de8_33'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>calculateEMI<br/><b>Killed by : </b>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testShouldRefinanceLowerRateWithBenefit()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@629de8_34'>34</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@629de8_34'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>calculateEMI<br/><b>Killed by : </b>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testCalculateEMIWithZeroInterest()]</span></span> Replaced double division with multiplication &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>calculateEMI<br/><b>Killed by : </b>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testCalculateEMIWithZeroInterest()]</span></span> replaced double return with 0.0d for com/banking/LoanCalculator::calculateEMI &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@629de8_37'>37</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@629de8_37'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>calculateEMI<br/><b>Killed by : </b>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testCalculateEMIWithPositiveValues()]</span></span> Replaced double division with multiplication &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@629de8_38'>38</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@629de8_38'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>calculateEMI<br/><b>Killed by : </b>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testCalculateEMIWithPositiveValues()]</span></span> Replaced double addition with subtraction &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@629de8_39'>39</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@629de8_39'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>calculateEMI<br/><b>Killed by : </b>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testShouldRefinanceLowerRateWithBenefit()]</span></span> Replaced double multiplication with division &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>calculateEMI<br/><b>Killed by : </b>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testShouldRefinanceLowerRateWithBenefit()]</span></span> Replaced double multiplication with division &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>calculateEMI<br/><b>Killed by : </b>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testCalculateEMIWithPositiveValues()]</span></span> Replaced double division with multiplication &rarr; KILLED</p> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>calculateEMI<br/><b>Killed by : </b>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testCalculateEMIWithPositiveValues()]</span></span> Replaced double subtraction with addition &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@629de8_41'>41</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@629de8_41'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>calculateEMI<br/><b>Killed by : </b>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testShouldRefinanceLowerRateWithBenefit()]</span></span> Replaced double multiplication with division &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>calculateEMI<br/><b>Killed by : </b>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testCalculateEMIWithPositiveValues()]</span></span> Replaced double division with multiplication &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>calculateEMI<br/><b>Killed by : </b>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testShouldRefinanceLowerRateWithBenefit()]</span></span> replaced double return with 0.0d for com/banking/LoanCalculator::calculateEMI &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@629de8_49'>49</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@629de8_49'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>calculateTotalInterest<br/><b>Killed by : </b>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testCalculateTotalAmount()]</span></span> Replaced double multiplication with division &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@629de8_50'>50</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@629de8_50'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>calculateTotalInterest<br/><b>Killed by : </b>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testCalculateTotalAmount()]</span></span> Replaced double subtraction with addition &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>calculateTotalInterest<br/><b>Killed by : </b>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testCalculateTotalAmount()]</span></span> Replaced double multiplication with division &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>calculateTotalInterest<br/><b>Killed by : </b>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testCalculateTotalAmount()]</span></span> replaced double return with 0.0d for com/banking/LoanCalculator::calculateTotalInterest &rarr; KILLED</p> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>calculateTotalInterest<br/><b>Killed by : </b>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testCalculateTotalAmount()]</span></span> Replaced double division with multiplication &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@629de8_58'>58</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@629de8_58'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>calculateTotalAmount<br/><b>Killed by : </b>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testCalculateTotalAmount()]</span></span> replaced double return with 0.0d for com/banking/LoanCalculator::calculateTotalAmount &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>calculateTotalAmount<br/><b>Killed by : </b>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testCalculateTotalAmount()]</span></span> Replaced double addition with subtraction &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@629de8_69'>69</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@629de8_69'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>isEligible<br/><b>Killed by : </b>none</span></span> changed conditional boundary &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>isEligible<br/><b>Killed by : </b>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testIsEligibleWithValidIncome()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@629de8_70'>70</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@629de8_70'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>isEligible<br/><b>Killed by : </b>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testIsEligibleWithNegativeIncome()]</span></span> replaced boolean return with true for com/banking/LoanCalculator::isEligible &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@629de8_74'>74</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@629de8_74'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>isEligible<br/><b>Killed by : </b>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testIsEligibleWithValidIncome()]</span></span> Replaced double division with multiplication &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>isEligible<br/><b>Killed by : </b>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testIsEligibleWithHighEMI()]</span></span> Replaced double multiplication with division &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@629de8_77'>77</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@629de8_77'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>isEligible<br/><b>Killed by : </b>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testIsEligibleWithHighEMI()]</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>isEligible<br/><b>Killed by : </b>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testIsEligibleWithValidIncome()]</span></span> changed conditional boundary &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@629de8_78'>78</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@629de8_78'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>isEligible<br/><b>Killed by : </b>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testIsEligibleWithHighEMI()]</span></span> replaced boolean return with true for com/banking/LoanCalculator::isEligible &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@629de8_81'>81</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@629de8_81'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>isEligible<br/><b>Killed by : </b>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testIsEligibleWithValidIncome()]</span></span> replaced boolean return with false for com/banking/LoanCalculator::isEligible &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@629de8_88'>88</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@629de8_88'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>calculateMaxLoanAmount<br/><b>Killed by : </b>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testCalculateMaxLoanAmount()]</span></span> negated conditional &rarr; KILLED</p> <p class='SURVIVED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>calculateMaxLoanAmount<br/><b>Killed by : </b>none</span></span> changed conditional boundary &rarr; SURVIVED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@629de8_92'>92</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@629de8_92'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>calculateMaxLoanAmount<br/><b>Killed by : </b>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testCalculateMaxLoanAmountZeroRate()]</span></span> Replaced double multiplication with division &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@629de8_94'>94</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@629de8_94'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>calculateMaxLoanAmount<br/><b>Killed by : </b>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testCalculateMaxLoanAmountZeroRate()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@629de8_95'>95</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@629de8_95'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>calculateMaxLoanAmount<br/><b>Killed by : </b>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testCalculateMaxLoanAmountZeroRate()]</span></span> Replaced double multiplication with division &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>calculateMaxLoanAmount<br/><b>Killed by : </b>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testCalculateMaxLoanAmountZeroRate()]</span></span> replaced double return with 0.0d for com/banking/LoanCalculator::calculateMaxLoanAmount &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@629de8_98'>98</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@629de8_98'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>calculateMaxLoanAmount<br/><b>Killed by : </b>none</span></span> Replaced double division with multiplication &rarr; SURVIVED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@629de8_99'>99</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@629de8_99'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>calculateMaxLoanAmount<br/><b>Killed by : </b>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testCalculateMaxLoanAmount()]</span></span> Replaced double addition with subtraction &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@629de8_100'>100</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@629de8_100'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>calculateMaxLoanAmount<br/><b>Killed by : </b>none</span></span> Replaced double subtraction with addition &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>calculateMaxLoanAmount<br/><b>Killed by : </b>none</span></span> Replaced double multiplication with division &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>calculateMaxLoanAmount<br/><b>Killed by : </b>none</span></span> Replaced double multiplication with division &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>calculateMaxLoanAmount<br/><b>Killed by : </b>none</span></span> Replaced double division with multiplication &rarr; SURVIVED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@629de8_102'>102</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@629de8_102'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>calculateMaxLoanAmount<br/><b>Killed by : </b>none</span></span> Replaced double division with multiplication &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>calculateMaxLoanAmount<br/><b>Killed by : </b>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testCalculateMaxLoanAmount()]</span></span> replaced double return with 0.0d for com/banking/LoanCalculator::calculateMaxLoanAmount &rarr; KILLED</p> <p class='SURVIVED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>calculateMaxLoanAmount<br/><b>Killed by : </b>none</span></span> Replaced double multiplication with division &rarr; SURVIVED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@629de8_110'>110</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@629de8_110'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>calculateRemainingPrincipal<br/><b>Killed by : </b>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testCalculateRemainingPrincipalAllPaid()]</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>calculateRemainingPrincipal<br/><b>Killed by : </b>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testCalculateRemainingPrincipalAllPaid()]</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>calculateRemainingPrincipal<br/><b>Killed by : </b>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testCalculateRemainingPrincipalAllPaid()]</span></span> changed conditional boundary &rarr; KILLED</p> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>calculateRemainingPrincipal<br/><b>Killed by : </b>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testCalculateRemainingPrincipalZeroPayments()]</span></span> changed conditional boundary &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@629de8_114'>114</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@629de8_114'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>calculateRemainingPrincipal<br/><b>Killed by : </b>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testCalculateRemainingPrincipalAllPaid()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@629de8_115'>115</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@629de8_115'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>calculateRemainingPrincipal<br/><b>Killed by : </b>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testCalculateRemainingPrincipalZeroPayments()]</span></span> replaced double return with 0.0d for com/banking/LoanCalculator::calculateRemainingPrincipal &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@629de8_118'>118</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@629de8_118'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>calculateRemainingPrincipal<br/><b>Killed by : </b>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testCalculateRemainingPrincipalMidTerm()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@629de8_123'>123</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@629de8_123'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>calculateRemainingPrincipal<br/><b>Killed by : </b>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testCalculateRemainingPrincipalMidTerm()]</span></span> Replaced double division with multiplication &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@629de8_126'>126</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@629de8_126'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>calculateRemainingPrincipal<br/><b>Killed by : </b>none</span></span> changed conditional boundary &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>calculateRemainingPrincipal<br/><b>Killed by : </b>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testCalculateRemainingPrincipalMidTerm()]</span></span> Changed increment from 1 to -1 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>calculateRemainingPrincipal<br/><b>Killed by : </b>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testCalculateRemainingPrincipalMidTerm()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@629de8_127'>127</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@629de8_127'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>calculateRemainingPrincipal<br/><b>Killed by : </b>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testCalculateRemainingPrincipalMidTerm()]</span></span> Replaced double multiplication with division &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@629de8_128'>128</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@629de8_128'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>calculateRemainingPrincipal<br/><b>Killed by : </b>none</span></span> Replaced double subtraction with addition &rarr; SURVIVED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@629de8_129'>129</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@629de8_129'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>calculateRemainingPrincipal<br/><b>Killed by : </b>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testCalculateRemainingPrincipalMidTerm()]</span></span> Replaced double subtraction with addition &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@629de8_131'>131</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@629de8_131'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>calculateRemainingPrincipal<br/><b>Killed by : </b>none</span></span> changed conditional boundary &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>calculateRemainingPrincipal<br/><b>Killed by : </b>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testCalculateRemainingPrincipalMidTerm()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@629de8_137'>137</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@629de8_137'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>calculateRemainingPrincipal<br/><b>Killed by : </b>none</span></span> Replaced double multiplication with division &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>calculateRemainingPrincipal<br/><b>Killed by : </b>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testCalculateRemainingPrincipalMidTerm()]</span></span> replaced double return with 0.0d for com/banking/LoanCalculator::calculateRemainingPrincipal &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>calculateRemainingPrincipal<br/><b>Killed by : </b>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testCalculateRemainingPrincipalMidTerm()]</span></span> Replaced double division with multiplication &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@629de8_144'>144</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@629de8_144'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>calculatePrepaymentPenalty<br/><b>Killed by : </b>none</span></span> changed conditional boundary &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>calculatePrepaymentPenalty<br/><b>Killed by : </b>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testCalculatePrepaymentPenalty()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@629de8_148'>148</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@629de8_148'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>calculatePrepaymentPenalty<br/><b>Killed by : </b>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testCalculatePrepaymentPenaltyZeroPercent()]</span></span> changed conditional boundary &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>calculatePrepaymentPenalty<br/><b>Killed by : </b>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testCalculatePrepaymentPenalty()]</span></span> negated conditional &rarr; KILLED</p> <p class='SURVIVED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>calculatePrepaymentPenalty<br/><b>Killed by : </b>none</span></span> changed conditional boundary &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>calculatePrepaymentPenalty<br/><b>Killed by : </b>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testCalculatePrepaymentPenalty()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@629de8_152'>152</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@629de8_152'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>calculatePrepaymentPenalty<br/><b>Killed by : </b>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testCalculatePrepaymentPenalty()]</span></span> Replaced double multiplication with division &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>calculatePrepaymentPenalty<br/><b>Killed by : </b>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testCalculatePrepaymentPenalty()]</span></span> Replaced double division with multiplication &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@629de8_153'>153</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@629de8_153'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>calculatePrepaymentPenalty<br/><b>Killed by : </b>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testCalculatePrepaymentPenalty()]</span></span> replaced double return with 0.0d for com/banking/LoanCalculator::calculatePrepaymentPenalty &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>calculatePrepaymentPenalty<br/><b>Killed by : </b>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testCalculatePrepaymentPenalty()]</span></span> Replaced double division with multiplication &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>calculatePrepaymentPenalty<br/><b>Killed by : </b>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testCalculatePrepaymentPenalty()]</span></span> Replaced double multiplication with division &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@629de8_161'>161</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@629de8_161'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>shouldRefinance<br/><b>Killed by : </b>none</span></span> changed conditional boundary &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>shouldRefinance<br/><b>Killed by : </b>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testShouldRefinanceLowerRateWithBenefit()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@629de8_162'>162</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@629de8_162'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>shouldRefinance<br/><b>Killed by : </b>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testShouldRefinanceHigherRate()]</span></span> replaced boolean return with true for com/banking/LoanCalculator::shouldRefinance &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@629de8_168'>168</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@629de8_168'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>shouldRefinance<br/><b>Killed by : </b>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testShouldRefinanceLowerRateNoBenefit()]</span></span> Replaced double subtraction with addition &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@629de8_169'>169</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@629de8_169'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>shouldRefinance<br/><b>Killed by : </b>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testShouldRefinanceLowerRateWithBenefit()]</span></span> Replaced double multiplication with division &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@629de8_171'>171</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@629de8_171'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>shouldRefinance<br/><b>Killed by : </b>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testShouldRefinanceLowerRateNoBenefit()]</span></span> replaced boolean return with true for com/banking/LoanCalculator::shouldRefinance &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>shouldRefinance<br/><b>Killed by : </b>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testShouldRefinanceLowerRateWithBenefit()]</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>shouldRefinance<br/><b>Killed by : </b>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testShouldRefinanceLowerRateWithBenefit()]</span></span> replaced boolean return with false for com/banking/LoanCalculator::shouldRefinance &rarr; KILLED</p> <p class='SURVIVED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>shouldRefinance<br/><b>Killed by : </b>none</span></span> changed conditional boundary &rarr; SURVIVED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@629de8_178'>178</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@629de8_178'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>calculateInterestInEMI<br/><b>Killed by : </b>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testCalculateInterestInEMI()]</span></span> negated conditional &rarr; KILLED</p> <p class='SURVIVED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>calculateInterestInEMI<br/><b>Killed by : </b>none</span></span> changed conditional boundary &rarr; SURVIVED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@629de8_182'>182</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@629de8_182'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>calculateInterestInEMI<br/><b>Killed by : </b>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testCalculateInterestInEMI()]</span></span> Replaced double division with multiplication &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@629de8_183'>183</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@629de8_183'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>calculateInterestInEMI<br/><b>Killed by : </b>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testCalculateInterestInEMI()]</span></span> Replaced double multiplication with division &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@629de8_185'>185</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@629de8_185'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>calculateInterestInEMI<br/><b>Killed by : </b>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testCalculateInterestInEMI()]</span></span> Replaced double division with multiplication &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>calculateInterestInEMI<br/><b>Killed by : </b>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testCalculateInterestInEMI()]</span></span> Replaced double multiplication with division &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>calculateInterestInEMI<br/><b>Killed by : </b>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testCalculateInterestInEMI()]</span></span> replaced double return with 0.0d for com/banking/LoanCalculator::calculateInterestInEMI &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@629de8_192'>192</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@629de8_192'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>calculatePrincipalInEMI<br/><b>Killed by : </b>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testCalculatePrincipalInEMI()]</span></span> negated conditional &rarr; KILLED</p> <p class='SURVIVED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>calculatePrincipalInEMI<br/><b>Killed by : </b>none</span></span> changed conditional boundary &rarr; SURVIVED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@629de8_196'>196</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@629de8_196'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>calculatePrincipalInEMI<br/><b>Killed by : </b>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testCalculatePrincipalInEMI()]</span></span> Replaced double multiplication with division &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>calculatePrincipalInEMI<br/><b>Killed by : </b>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testCalculatePrincipalInEMI()]</span></span> replaced double return with 0.0d for com/banking/LoanCalculator::calculatePrincipalInEMI &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>calculatePrincipalInEMI<br/><b>Killed by : </b>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testCalculatePrincipalInEMI()]</span></span> Replaced double subtraction with addition &rarr; KILLED</p> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>calculatePrincipalInEMI<br/><b>Killed by : </b>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testCalculatePrincipalInEMI()]</span></span> Replaced double division with multiplication &rarr; KILLED</p> 
+</td>
+</tr>
+
+</table>
+
+
+<h2>Active mutators</h2>
+<ul>
+
+<li class='mutator'>CONDITIONALS_BOUNDARY</li>
+
+<li class='mutator'>EMPTY_RETURNS</li>
+
+<li class='mutator'>FALSE_RETURNS</li>
+
+<li class='mutator'>INCREMENTS</li>
+
+<li class='mutator'>INVERT_NEGS</li>
+
+<li class='mutator'>MATH</li>
+
+<li class='mutator'>NEGATE_CONDITIONALS</li>
+
+<li class='mutator'>NULL_RETURNS</li>
+
+<li class='mutator'>PRIMITIVE_RETURNS</li>
+
+<li class='mutator'>TRUE_RETURNS</li>
+
+<li class='mutator'>VOID_METHOD_CALLS</li>
+
+</ul>
+
+<h2>Tests examined</h2>
+<ul>
+<li>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testCalculateRemainingPrincipalAllPaid()] (0 ms)</li><li>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testCalculateRemainingPrincipalZeroPayments()] (0 ms)</li><li>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testCalculateRemainingPrincipalInvalidMonths()] (1 ms)</li><li>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testCalculateRemainingPrincipalExceedingMonths()] (1 ms)</li><li>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testCalculateRemainingPrincipalMidTerm()] (0 ms)</li><li>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testShouldRefinanceLowerRateWithBenefit()] (0 ms)</li><li>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testCalculateEMIWithZeroInterest()] (1 ms)</li><li>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testCalculateEMIWithPositiveValues()] (0 ms)</li><li>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testCalculateTotalAmount()] (0 ms)</li><li>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testShouldRefinanceLowerRateNoBenefit()] (0 ms)</li><li>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testCalculateEMIInvalidTenure()] (1 ms)</li><li>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testCalculateTotalInterest()] (1 ms)</li><li>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testCalculatePrepaymentPenalty()] (0 ms)</li><li>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testCalculatePrepaymentPenaltyZeroPercent()] (0 ms)</li><li>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testCalculatePrepaymentPenaltyInvalidPercent()] (2 ms)</li><li>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testCalculateMaxLoanAmount()] (0 ms)</li><li>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testCalculateInterestInEMI()] (0 ms)</li><li>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testCalculateMaxLoanAmountZeroRate()] (0 ms)</li><li>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testIsEligibleWithNegativeIncome()] (0 ms)</li><li>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testIsEligibleWithZeroIncome()] (0 ms)</li><li>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testCalculatePrincipalInEMI()] (0 ms)</li><li>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testCalculatePrincipalInEMIInvalidAmount()] (1 ms)</li><li>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testIsEligibleWithHighEMI()] (0 ms)</li><li>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testIsEligibleWithValidIncome()] (0 ms)</li><li>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testCalculateInterestInEMIZeroBalance()] (0 ms)</li><li>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testShouldRefinanceHigherRate()] (0 ms)</li><li>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testCalculateEMINegativeRate()] (2 ms)</li><li>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testCalculateEMIInvalidPrincipal()] (1 ms)</li><li>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testCalculateMaxLoanInvalidIncome()] (0 ms)</li><li>com.banking.LoanCalculatorTest.[engine:junit-jupiter]/[class:com.banking.LoanCalculatorTest]/[method:testCalculatePrepaymentPenaltyInvalidPrincipal()] (1 ms)</li>
+</ul>
+
+<br/>
+
+Report generated by <a href='https://pitest.org'>PIT</a> 1.15.3
+
+</body>
+</html>

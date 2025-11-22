@@ -1,0 +1,4612 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+
+
+<h1>InvestmentCalculator.java</h1>
+
+<table class="src">
+
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_1'/>
+1
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_1'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>package com.banking;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_2'/>
+2
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_2'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_3'/>
+3
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_3'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>/**</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_4'/>
+4
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_4'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''> * Investment Calculator for compound interest, ROI, and investment analysis</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_5'/>
+5
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_5'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''> */</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_6'/>
+6
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_6'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>public class InvestmentCalculator {</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_7'/>
+7
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_7'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    </span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_8'/>
+8
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_8'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    private Calculator calculator;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_9'/>
+9
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_9'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    </span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_10'/>
+10
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_10'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    public InvestmentCalculator() {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_11'/>
+11
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_11'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        this.calculator = new Calculator();</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_12'/>
+12
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_12'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_13'/>
+13
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_13'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    </span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_14'/>
+14
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_14'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    /**</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_15'/>
+15
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_15'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * Calculates compound interest</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_16'/>
+16
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_16'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * Formula: A = P(1 + r/n)^(nt)</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_17'/>
+17
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_17'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * @param principal Initial investment amount</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_18'/>
+18
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_18'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * @param annualRate Annual interest rate in percentage</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_19'/>
+19
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_19'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * @param years Investment period in years</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_20'/>
+20
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_20'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * @param compoundingFrequency Number of times interest is compounded per year</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_21'/>
+21
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_21'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     */</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_22'/>
+22
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_22'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public double calculateCompoundInterest(double principal, double annualRate, </span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_23'/>
+23
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_23'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>                                            int years, int compoundingFrequency) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_24'/>
+24
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_24'>2</a>
+<span>
+
+1. calculateCompoundInterest : changed conditional boundary &rarr; SURVIVED<br/>
+
+2. calculateCompoundInterest : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>        if (principal &#60;= 0) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_25'/>
+25
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_25'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>            throw new IllegalArgumentException(&#34;Principal must be positive&#34;);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_26'/>
+26
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_26'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_27'/>
+27
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_27'>2</a>
+<span>
+
+1. calculateCompoundInterest : changed conditional boundary &rarr; SURVIVED<br/>
+
+2. calculateCompoundInterest : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>        if (annualRate &#60; 0) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_28'/>
+28
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_28'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>            throw new IllegalArgumentException(&#34;Interest rate cannot be negative&#34;);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_29'/>
+29
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_29'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_30'/>
+30
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_30'>2</a>
+<span>
+
+1. calculateCompoundInterest : changed conditional boundary &rarr; KILLED<br/>
+
+2. calculateCompoundInterest : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        if (years &#60;= 0) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_31'/>
+31
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_31'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>            throw new IllegalArgumentException(&#34;Years must be positive&#34;);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_32'/>
+32
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_32'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_33'/>
+33
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_33'>2</a>
+<span>
+
+1. calculateCompoundInterest : changed conditional boundary &rarr; KILLED<br/>
+
+2. calculateCompoundInterest : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        if (compoundingFrequency &#60;= 0) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_34'/>
+34
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_34'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>            throw new IllegalArgumentException(&#34;Compounding frequency must be positive&#34;);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_35'/>
+35
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_35'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_36'/>
+36
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_36'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        </span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_37'/>
+37
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_37'>1</a>
+<span>
+
+1. calculateCompoundInterest : Replaced double division with multiplication &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        double rate = annualRate / 100;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_38'/>
+38
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_38'>3</a>
+<span>
+
+1. calculateCompoundInterest : Replaced double division with multiplication &rarr; KILLED<br/>
+
+2. calculateCompoundInterest : Replaced double addition with subtraction &rarr; KILLED<br/>
+
+3. calculateCompoundInterest : Replaced double multiplication with division &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        double amount = principal * Math.pow(1 + rate / compoundingFrequency, </span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_39'/>
+39
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_39'>1</a>
+<span>
+
+1. calculateCompoundInterest : Replaced integer multiplication with division &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>                                             compoundingFrequency * years);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_40'/>
+40
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_40'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        </span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_41'/>
+41
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_41'>3</a>
+<span>
+
+1. calculateCompoundInterest : replaced double return with 0.0d for com/banking/InvestmentCalculator::calculateCompoundInterest &rarr; KILLED<br/>
+
+2. calculateCompoundInterest : Replaced double division with multiplication &rarr; KILLED<br/>
+
+3. calculateCompoundInterest : Replaced double multiplication with division &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return Math.round(amount * 100.0) / 100.0;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_42'/>
+42
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_42'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_43'/>
+43
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_43'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    </span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_44'/>
+44
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_44'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    /**</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_45'/>
+45
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_45'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * Calculates simple interest</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_46'/>
+46
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_46'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     */</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_47'/>
+47
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_47'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public double calculateSimpleInterest(double principal, double annualRate, int years) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_48'/>
+48
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_48'>6</a>
+<span>
+
+1. calculateSimpleInterest : changed conditional boundary &rarr; SURVIVED<br/>
+
+2. calculateSimpleInterest : changed conditional boundary &rarr; SURVIVED<br/>
+
+3. calculateSimpleInterest : changed conditional boundary &rarr; SURVIVED<br/>
+
+4. calculateSimpleInterest : negated conditional &rarr; KILLED<br/>
+
+5. calculateSimpleInterest : negated conditional &rarr; KILLED<br/>
+
+6. calculateSimpleInterest : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>        if (principal &#60;= 0 || annualRate &#60; 0 || years &#60;= 0) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_49'/>
+49
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_49'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>            throw new IllegalArgumentException(&#34;Invalid parameters for simple interest&#34;);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_50'/>
+50
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_50'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_51'/>
+51
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_51'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        </span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_52'/>
+52
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_52'>3</a>
+<span>
+
+1. calculateSimpleInterest : Replaced double division with multiplication &rarr; KILLED<br/>
+
+2. calculateSimpleInterest : Replaced double multiplication with division &rarr; KILLED<br/>
+
+3. calculateSimpleInterest : Replaced double multiplication with division &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        double interest = principal * (annualRate / 100) * years;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_53'/>
+53
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_53'>3</a>
+<span>
+
+1. calculateSimpleInterest : Replaced double division with multiplication &rarr; KILLED<br/>
+
+2. calculateSimpleInterest : replaced double return with 0.0d for com/banking/InvestmentCalculator::calculateSimpleInterest &rarr; KILLED<br/>
+
+3. calculateSimpleInterest : Replaced double multiplication with division &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return Math.round(interest * 100.0) / 100.0;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_54'/>
+54
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_54'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_55'/>
+55
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_55'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    </span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_56'/>
+56
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_56'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    /**</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_57'/>
+57
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_57'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * Calculates Return on Investment (ROI)</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_58'/>
+58
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_58'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * ROI = (Final Value - Initial Investment) / Initial Investment * 100</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_59'/>
+59
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_59'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     */</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_60'/>
+60
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_60'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public double calculateROI(double initialInvestment, double finalValue) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_61'/>
+61
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_61'>2</a>
+<span>
+
+1. calculateROI : negated conditional &rarr; KILLED<br/>
+
+2. calculateROI : changed conditional boundary &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        if (initialInvestment &#60;= 0) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_62'/>
+62
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_62'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>            throw new IllegalArgumentException(&#34;Initial investment must be positive&#34;);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_63'/>
+63
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_63'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_64'/>
+64
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_64'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        </span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_65'/>
+65
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_65'>1</a>
+<span>
+
+1. calculateROI : Replaced double subtraction with addition &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        double gain = finalValue - initialInvestment;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_66'/>
+66
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_66'>2</a>
+<span>
+
+1. calculateROI : Replaced double division with multiplication &rarr; KILLED<br/>
+
+2. calculateROI : Replaced double multiplication with division &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        double roi = (gain / initialInvestment) * 100;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_67'/>
+67
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_67'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        </span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_68'/>
+68
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_68'>3</a>
+<span>
+
+1. calculateROI : Replaced double multiplication with division &rarr; KILLED<br/>
+
+2. calculateROI : Replaced double division with multiplication &rarr; KILLED<br/>
+
+3. calculateROI : replaced double return with 0.0d for com/banking/InvestmentCalculator::calculateROI &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return Math.round(roi * 100.0) / 100.0;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_69'/>
+69
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_69'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_70'/>
+70
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_70'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    </span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_71'/>
+71
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_71'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    /**</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_72'/>
+72
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_72'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * Calculates future value of SIP (Systematic Investment Plan)</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_73'/>
+73
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_73'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * FV = P &#215; ((1 + r)^n - 1) / r &#215; (1 + r)</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_74'/>
+74
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_74'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     */</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_75'/>
+75
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_75'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public double calculateSIPReturns(double monthlyInvestment, double annualRate, int months) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_76'/>
+76
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_76'>2</a>
+<span>
+
+1. calculateSIPReturns : changed conditional boundary &rarr; SURVIVED<br/>
+
+2. calculateSIPReturns : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>        if (monthlyInvestment &#60;= 0) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_77'/>
+77
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_77'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>            throw new IllegalArgumentException(&#34;Monthly investment must be positive&#34;);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_78'/>
+78
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_78'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_79'/>
+79
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_79'>2</a>
+<span>
+
+1. calculateSIPReturns : changed conditional boundary &rarr; KILLED<br/>
+
+2. calculateSIPReturns : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        if (months &#60;= 0) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_80'/>
+80
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_80'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>            throw new IllegalArgumentException(&#34;Months must be positive&#34;);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_81'/>
+81
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_81'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_82'/>
+82
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_82'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        </span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_83'/>
+83
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_83'>1</a>
+<span>
+
+1. calculateSIPReturns : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        if (annualRate == 0) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_84'/>
+84
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_84'>2</a>
+<span>
+
+1. calculateSIPReturns : Replaced double multiplication with division &rarr; KILLED<br/>
+
+2. calculateSIPReturns : replaced double return with 0.0d for com/banking/InvestmentCalculator::calculateSIPReturns &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            return monthlyInvestment * months;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_85'/>
+85
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_85'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_86'/>
+86
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_86'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        </span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_87'/>
+87
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_87'>1</a>
+<span>
+
+1. calculateSIPReturns : Replaced double division with multiplication &rarr; SURVIVED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>        double monthlyRate = annualRate / (12 * 100);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_88'/>
+88
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_88'>2</a>
+<span>
+
+1. calculateSIPReturns : Replaced double multiplication with division &rarr; SURVIVED<br/>
+
+2. calculateSIPReturns : Replaced double multiplication with division &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>        double futureValue = monthlyInvestment * </span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_89'/>
+89
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_89'>3</a>
+<span>
+
+1. calculateSIPReturns : Replaced double subtraction with addition &rarr; SURVIVED<br/>
+
+2. calculateSIPReturns : Replaced double addition with subtraction &rarr; KILLED<br/>
+
+3. calculateSIPReturns : Replaced double division with multiplication &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>                            ((Math.pow(1 + monthlyRate, months) - 1) / monthlyRate) * </span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_90'/>
+90
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_90'>1</a>
+<span>
+
+1. calculateSIPReturns : Replaced double addition with subtraction &rarr; SURVIVED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>                            (1 + monthlyRate);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_91'/>
+91
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_91'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        </span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_92'/>
+92
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_92'>3</a>
+<span>
+
+1. calculateSIPReturns : Replaced double division with multiplication &rarr; SURVIVED<br/>
+
+2. calculateSIPReturns : Replaced double multiplication with division &rarr; KILLED<br/>
+
+3. calculateSIPReturns : replaced double return with 0.0d for com/banking/InvestmentCalculator::calculateSIPReturns &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>        return Math.round(futureValue * 100.0) / 100.0;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_93'/>
+93
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_93'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_94'/>
+94
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_94'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    </span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_95'/>
+95
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_95'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    /**</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_96'/>
+96
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_96'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * Calculates break-even point for an investment</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_97'/>
+97
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_97'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     */</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_98'/>
+98
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_98'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public int calculateBreakEvenPeriod(double initialInvestment, double monthlyReturn) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_99'/>
+99
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_99'>4</a>
+<span>
+
+1. calculateBreakEvenPeriod : changed conditional boundary &rarr; SURVIVED<br/>
+
+2. calculateBreakEvenPeriod : changed conditional boundary &rarr; SURVIVED<br/>
+
+3. calculateBreakEvenPeriod : negated conditional &rarr; KILLED<br/>
+
+4. calculateBreakEvenPeriod : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>        if (initialInvestment &#60;= 0 || monthlyReturn &#60;= 0) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_100'/>
+100
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_100'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>            throw new IllegalArgumentException(&#34;Invalid parameters&#34;);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_101'/>
+101
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_101'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_102'/>
+102
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_102'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        </span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_103'/>
+103
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_103'>1</a>
+<span>
+
+1. calculateBreakEvenPeriod : Replaced double division with multiplication &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        int months = (int) Math.ceil(initialInvestment / monthlyReturn);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_104'/>
+104
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_104'>1</a>
+<span>
+
+1. calculateBreakEvenPeriod : replaced int return with 0 for com/banking/InvestmentCalculator::calculateBreakEvenPeriod &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return months;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_105'/>
+105
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_105'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_106'/>
+106
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_106'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    </span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_107'/>
+107
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_107'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    /**</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_108'/>
+108
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_108'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * Determines if investment goal is achievable</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_109'/>
+109
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_109'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     */</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_110'/>
+110
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_110'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public boolean isGoalAchievable(double currentAmount, double goalAmount, </span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_111'/>
+111
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_111'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>                                    double annualRate, int years) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_112'/>
+112
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_112'>6</a>
+<span>
+
+1. isGoalAchievable : changed conditional boundary &rarr; SURVIVED<br/>
+
+2. isGoalAchievable : changed conditional boundary &rarr; SURVIVED<br/>
+
+3. isGoalAchievable : changed conditional boundary &rarr; SURVIVED<br/>
+
+4. isGoalAchievable : negated conditional &rarr; KILLED<br/>
+
+5. isGoalAchievable : negated conditional &rarr; KILLED<br/>
+
+6. isGoalAchievable : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>        if (currentAmount &#60; 0 || goalAmount &#60;= 0 || years &#60;= 0) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_113'/>
+113
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_113'>1</a>
+<span>
+
+1. isGoalAchievable : replaced boolean return with true for com/banking/InvestmentCalculator::isGoalAchievable &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            return false;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_114'/>
+114
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_114'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_115'/>
+115
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_115'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        </span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_116'/>
+116
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_116'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        double futureValue = calculateCompoundInterest(currentAmount, annualRate, years, 12);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_117'/>
+117
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_117'>4</a>
+<span>
+
+1. isGoalAchievable : changed conditional boundary &rarr; SURVIVED<br/>
+
+2. isGoalAchievable : replaced boolean return with false for com/banking/InvestmentCalculator::isGoalAchievable &rarr; KILLED<br/>
+
+3. isGoalAchievable : replaced boolean return with true for com/banking/InvestmentCalculator::isGoalAchievable &rarr; KILLED<br/>
+
+4. isGoalAchievable : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>        return futureValue &#62;= goalAmount;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_118'/>
+118
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_118'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_119'/>
+119
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_119'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    </span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_120'/>
+120
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_120'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    /**</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_121'/>
+121
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_121'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * Calculates required monthly investment to reach a goal</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_122'/>
+122
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_122'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     */</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_123'/>
+123
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_123'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public double calculateRequiredMonthlySIP(double goalAmount, double annualRate, int months) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_124'/>
+124
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_124'>4</a>
+<span>
+
+1. calculateRequiredMonthlySIP : changed conditional boundary &rarr; SURVIVED<br/>
+
+2. calculateRequiredMonthlySIP : changed conditional boundary &rarr; SURVIVED<br/>
+
+3. calculateRequiredMonthlySIP : negated conditional &rarr; KILLED<br/>
+
+4. calculateRequiredMonthlySIP : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>        if (goalAmount &#60;= 0 || months &#60;= 0) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_125'/>
+125
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_125'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>            throw new IllegalArgumentException(&#34;Invalid parameters&#34;);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_126'/>
+126
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_126'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_127'/>
+127
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_127'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        </span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_128'/>
+128
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_128'>1</a>
+<span>
+
+1. calculateRequiredMonthlySIP : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        if (annualRate == 0) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_129'/>
+129
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_129'>2</a>
+<span>
+
+1. calculateRequiredMonthlySIP : replaced double return with 0.0d for com/banking/InvestmentCalculator::calculateRequiredMonthlySIP &rarr; KILLED<br/>
+
+2. calculateRequiredMonthlySIP : Replaced double division with multiplication &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            return goalAmount / months;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_130'/>
+130
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_130'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_131'/>
+131
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_131'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        </span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_132'/>
+132
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_132'>1</a>
+<span>
+
+1. calculateRequiredMonthlySIP : Replaced double division with multiplication &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        double monthlyRate = annualRate / (12 * 100);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_133'/>
+133
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_133'>2</a>
+<span>
+
+1. calculateRequiredMonthlySIP : Replaced double division with multiplication &rarr; SURVIVED<br/>
+
+2. calculateRequiredMonthlySIP : Replaced double multiplication with division &rarr; SURVIVED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>        double requiredSIP = goalAmount * monthlyRate / </span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_134'/>
+134
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_134'>4</a>
+<span>
+
+1. calculateRequiredMonthlySIP : Replaced double subtraction with addition &rarr; SURVIVED<br/>
+
+2. calculateRequiredMonthlySIP : Replaced double addition with subtraction &rarr; SURVIVED<br/>
+
+3. calculateRequiredMonthlySIP : Replaced double multiplication with division &rarr; SURVIVED<br/>
+
+4. calculateRequiredMonthlySIP : Replaced double addition with subtraction &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>                            ((Math.pow(1 + monthlyRate, months) - 1) * (1 + monthlyRate));</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_135'/>
+135
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_135'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        </span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_136'/>
+136
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_136'>3</a>
+<span>
+
+1. calculateRequiredMonthlySIP : Replaced double division with multiplication &rarr; SURVIVED<br/>
+
+2. calculateRequiredMonthlySIP : Replaced double multiplication with division &rarr; SURVIVED<br/>
+
+3. calculateRequiredMonthlySIP : replaced double return with 0.0d for com/banking/InvestmentCalculator::calculateRequiredMonthlySIP &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>        return Math.round(requiredSIP * 100.0) / 100.0;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_137'/>
+137
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_137'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_138'/>
+138
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_138'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    </span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_139'/>
+139
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_139'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    /**</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_140'/>
+140
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_140'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * Calculates portfolio value with multiple investments</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_141'/>
+141
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_141'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     */</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_142'/>
+142
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_142'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public double calculatePortfolioValue(double[] investments, double[] returns) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_143'/>
+143
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_143'>2</a>
+<span>
+
+1. calculatePortfolioValue : negated conditional &rarr; KILLED<br/>
+
+2. calculatePortfolioValue : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        if (investments == null || returns == null) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_144'/>
+144
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_144'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>            throw new IllegalArgumentException(&#34;Arrays cannot be null&#34;);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_145'/>
+145
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_145'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_146'/>
+146
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_146'>1</a>
+<span>
+
+1. calculatePortfolioValue : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        if (investments.length != returns.length) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_147'/>
+147
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_147'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>            throw new IllegalArgumentException(&#34;Arrays must have same length&#34;);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_148'/>
+148
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_148'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_149'/>
+149
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_149'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        </span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_150'/>
+150
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_150'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        double totalValue = 0;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_151'/>
+151
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_151'>2</a>
+<span>
+
+1. calculatePortfolioValue : changed conditional boundary &rarr; KILLED<br/>
+
+2. calculatePortfolioValue : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        for (int i = 0; i &#60; investments.length; i++) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_152'/>
+152
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_152'>2</a>
+<span>
+
+1. calculatePortfolioValue : changed conditional boundary &rarr; SURVIVED<br/>
+
+2. calculatePortfolioValue : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>            if (investments[i] &#60; 0) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_153'/>
+153
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_153'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>                throw new IllegalArgumentException(&#34;Investment cannot be negative&#34;);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_154'/>
+154
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_154'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>            }</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_155'/>
+155
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_155'>4</a>
+<span>
+
+1. calculatePortfolioValue : Replaced double addition with subtraction &rarr; KILLED<br/>
+
+2. calculatePortfolioValue : Replaced double multiplication with division &rarr; KILLED<br/>
+
+3. calculatePortfolioValue : Replaced double addition with subtraction &rarr; KILLED<br/>
+
+4. calculatePortfolioValue : Replaced double division with multiplication &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            totalValue += investments[i] * (1 + returns[i] / 100);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_156'/>
+156
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_156'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_157'/>
+157
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_157'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        </span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_158'/>
+158
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_158'>3</a>
+<span>
+
+1. calculatePortfolioValue : Replaced double multiplication with division &rarr; KILLED<br/>
+
+2. calculatePortfolioValue : replaced double return with 0.0d for com/banking/InvestmentCalculator::calculatePortfolioValue &rarr; KILLED<br/>
+
+3. calculatePortfolioValue : Replaced double division with multiplication &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return Math.round(totalValue * 100.0) / 100.0;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_159'/>
+159
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_159'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_160'/>
+160
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_160'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    </span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_161'/>
+161
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_161'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    /**</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_162'/>
+162
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_162'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * Calculates diversification ratio</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_163'/>
+163
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_163'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     */</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_164'/>
+164
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_164'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public double calculateDiversificationRatio(double[] investments) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_165'/>
+165
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_165'>2</a>
+<span>
+
+1. calculateDiversificationRatio : negated conditional &rarr; KILLED<br/>
+
+2. calculateDiversificationRatio : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        if (investments == null || investments.length == 0) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_166'/>
+166
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_166'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>            throw new IllegalArgumentException(&#34;Invalid investments array&#34;);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_167'/>
+167
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_167'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_168'/>
+168
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_168'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        </span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_169'/>
+169
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_169'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        double total = 0;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_170'/>
+170
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_170'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        double maxInvestment = 0;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_171'/>
+171
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_171'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        </span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_172'/>
+172
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_172'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        for (double investment : investments) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_173'/>
+173
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_173'>2</a>
+<span>
+
+1. calculateDiversificationRatio : changed conditional boundary &rarr; SURVIVED<br/>
+
+2. calculateDiversificationRatio : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>            if (investment &#60; 0) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_174'/>
+174
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_174'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>                throw new IllegalArgumentException(&#34;Investment cannot be negative&#34;);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_175'/>
+175
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_175'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>            }</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_176'/>
+176
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_176'>1</a>
+<span>
+
+1. calculateDiversificationRatio : Replaced double addition with subtraction &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            total += investment;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_177'/>
+177
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_177'>2</a>
+<span>
+
+1. calculateDiversificationRatio : changed conditional boundary &rarr; SURVIVED<br/>
+
+2. calculateDiversificationRatio : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>            if (investment &#62; maxInvestment) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_178'/>
+178
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_178'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>                maxInvestment = investment;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_179'/>
+179
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_179'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>            }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_180'/>
+180
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_180'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_181'/>
+181
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_181'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        </span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_182'/>
+182
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_182'>1</a>
+<span>
+
+1. calculateDiversificationRatio : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        if (total == 0) {</span></pre></td></tr>
+
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_183'/>
+183
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_183'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='uncovered'><pre><span  class=''>            return 0.0;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_184'/>
+184
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_184'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_185'/>
+185
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_185'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        </span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_186'/>
+186
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_186'>3</a>
+<span>
+
+1. calculateDiversificationRatio : Replaced double division with multiplication &rarr; KILLED<br/>
+
+2. calculateDiversificationRatio : Replaced double subtraction with addition &rarr; KILLED<br/>
+
+3. calculateDiversificationRatio : Replaced double multiplication with division &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        double ratio = (1 - (maxInvestment / total)) * 100;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_187'/>
+187
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_187'>3</a>
+<span>
+
+1. calculateDiversificationRatio : Replaced double division with multiplication &rarr; KILLED<br/>
+
+2. calculateDiversificationRatio : replaced double return with 0.0d for com/banking/InvestmentCalculator::calculateDiversificationRatio &rarr; KILLED<br/>
+
+3. calculateDiversificationRatio : Replaced double multiplication with division &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return Math.round(ratio * 100.0) / 100.0;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_188'/>
+188
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_188'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_189'/>
+189
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_189'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    </span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_190'/>
+190
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_190'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    /**</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_191'/>
+191
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_191'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * Calculates inflation-adjusted returns</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_192'/>
+192
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_192'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     */</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_193'/>
+193
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_193'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public double calculateRealReturn(double nominalReturn, double inflationRate) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_194'/>
+194
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_194'>2</a>
+<span>
+
+1. calculateRealReturn : changed conditional boundary &rarr; KILLED<br/>
+
+2. calculateRealReturn : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        if (inflationRate &#62;= 100) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_195'/>
+195
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_195'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>            throw new IllegalArgumentException(&#34;Inflation rate too high&#34;);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_196'/>
+196
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_196'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_197'/>
+197
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_197'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        </span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_198'/>
+198
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_198'>7</a>
+<span>
+
+1. calculateRealReturn : Replaced double division with multiplication &rarr; KILLED<br/>
+
+2. calculateRealReturn : Replaced double addition with subtraction &rarr; KILLED<br/>
+
+3. calculateRealReturn : Replaced double addition with subtraction &rarr; KILLED<br/>
+
+4. calculateRealReturn : Replaced double subtraction with addition &rarr; KILLED<br/>
+
+5. calculateRealReturn : Replaced double division with multiplication &rarr; KILLED<br/>
+
+6. calculateRealReturn : Replaced double multiplication with division &rarr; KILLED<br/>
+
+7. calculateRealReturn : Replaced double division with multiplication &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        double realReturn = ((1 + nominalReturn / 100) / (1 + inflationRate / 100) - 1) * 100;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_199'/>
+199
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_199'>3</a>
+<span>
+
+1. calculateRealReturn : Replaced double multiplication with division &rarr; KILLED<br/>
+
+2. calculateRealReturn : replaced double return with 0.0d for com/banking/InvestmentCalculator::calculateRealReturn &rarr; KILLED<br/>
+
+3. calculateRealReturn : Replaced double division with multiplication &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return Math.round(realReturn * 100.0) / 100.0;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_200'/>
+200
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_200'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_201'/>
+201
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_201'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    </span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_202'/>
+202
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_202'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    /**</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_203'/>
+203
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_203'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * Determines investment risk level</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_204'/>
+204
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_204'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     */</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_205'/>
+205
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_205'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public String assessRiskLevel(double volatility) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_206'/>
+206
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_206'>2</a>
+<span>
+
+1. assessRiskLevel : changed conditional boundary &rarr; SURVIVED<br/>
+
+2. assessRiskLevel : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>        if (volatility &#60; 0) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_207'/>
+207
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_207'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>            throw new IllegalArgumentException(&#34;Volatility cannot be negative&#34;);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_208'/>
+208
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_208'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_209'/>
+209
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_209'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        </span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_210'/>
+210
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_210'>2</a>
+<span>
+
+1. assessRiskLevel : changed conditional boundary &rarr; SURVIVED<br/>
+
+2. assessRiskLevel : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>        if (volatility &#60; 5) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_211'/>
+211
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_211'>1</a>
+<span>
+
+1. assessRiskLevel : replaced return value with &#34;&#34; for com/banking/InvestmentCalculator::assessRiskLevel &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            return &#34;Low&#34;;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_212'/>
+212
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_212'>2</a>
+<span>
+
+1. assessRiskLevel : changed conditional boundary &rarr; SURVIVED<br/>
+
+2. assessRiskLevel : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>        } else if (volatility &#60; 15) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_213'/>
+213
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_213'>1</a>
+<span>
+
+1. assessRiskLevel : replaced return value with &#34;&#34; for com/banking/InvestmentCalculator::assessRiskLevel &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            return &#34;Medium&#34;;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_214'/>
+214
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_214'>2</a>
+<span>
+
+1. assessRiskLevel : changed conditional boundary &rarr; SURVIVED<br/>
+
+2. assessRiskLevel : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>        } else if (volatility &#60; 25) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_215'/>
+215
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_215'>1</a>
+<span>
+
+1. assessRiskLevel : replaced return value with &#34;&#34; for com/banking/InvestmentCalculator::assessRiskLevel &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            return &#34;High&#34;;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_216'/>
+216
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_216'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        } else {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_217'/>
+217
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_217'>1</a>
+<span>
+
+1. assessRiskLevel : replaced return value with &#34;&#34; for com/banking/InvestmentCalculator::assessRiskLevel &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            return &#34;Very High&#34;;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_218'/>
+218
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_218'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_219'/>
+219
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_219'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_220'/>
+220
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_220'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    </span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_221'/>
+221
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_221'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    /**</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_222'/>
+222
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_222'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * Calculates average annual growth rate (CAGR)</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_223'/>
+223
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_223'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     */</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_224'/>
+224
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_224'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public double calculateCAGR(double initialValue, double finalValue, int years) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_225'/>
+225
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_225'>6</a>
+<span>
+
+1. calculateCAGR : changed conditional boundary &rarr; SURVIVED<br/>
+
+2. calculateCAGR : changed conditional boundary &rarr; SURVIVED<br/>
+
+3. calculateCAGR : changed conditional boundary &rarr; SURVIVED<br/>
+
+4. calculateCAGR : negated conditional &rarr; KILLED<br/>
+
+5. calculateCAGR : negated conditional &rarr; KILLED<br/>
+
+6. calculateCAGR : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>        if (initialValue &#60;= 0 || finalValue &#60;= 0 || years &#60;= 0) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_226'/>
+226
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_226'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>            throw new IllegalArgumentException(&#34;Invalid parameters for CAGR&#34;);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_227'/>
+227
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_227'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_228'/>
+228
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_228'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        </span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_229'/>
+229
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_229'>4</a>
+<span>
+
+1. calculateCAGR : Replaced double multiplication with division &rarr; KILLED<br/>
+
+2. calculateCAGR : Replaced double division with multiplication &rarr; KILLED<br/>
+
+3. calculateCAGR : Replaced double subtraction with addition &rarr; KILLED<br/>
+
+4. calculateCAGR : Replaced double division with multiplication &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        double cagr = (Math.pow(finalValue / initialValue, 1.0 / years) - 1) * 100;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_230'/>
+230
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_230'>3</a>
+<span>
+
+1. calculateCAGR : replaced double return with 0.0d for com/banking/InvestmentCalculator::calculateCAGR &rarr; KILLED<br/>
+
+2. calculateCAGR : Replaced double multiplication with division &rarr; KILLED<br/>
+
+3. calculateCAGR : Replaced double division with multiplication &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return Math.round(cagr * 100.0) / 100.0;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_231'/>
+231
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_231'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@416c1b0_232'/>
+232
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_232'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>}</span></pre></td></tr>
+
+
+
+<tr><td></td><td></td><td><h2>Mutations</h2></td></tr>
+
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@416c1b0_24'>24</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_24'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>calculateCompoundInterest<br/><b>Killed by : </b>none</span></span> changed conditional boundary &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>calculateCompoundInterest<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateCompoundInterestInvalidPrincipal()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@416c1b0_27'>27</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_27'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>calculateCompoundInterest<br/><b>Killed by : </b>none</span></span> changed conditional boundary &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>calculateCompoundInterest<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateCompoundInterest()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@416c1b0_30'>30</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_30'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>calculateCompoundInterest<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateCompoundInterestInvalidYears()]</span></span> changed conditional boundary &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>calculateCompoundInterest<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateCompoundInterest()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@416c1b0_33'>33</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_33'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>calculateCompoundInterest<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateCompoundInterestInvalidFrequency()]</span></span> changed conditional boundary &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>calculateCompoundInterest<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateCompoundInterestInvalidFrequency()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@416c1b0_37'>37</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_37'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>calculateCompoundInterest<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateCompoundInterest()]</span></span> Replaced double division with multiplication &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@416c1b0_38'>38</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_38'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>calculateCompoundInterest<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateCompoundInterest()]</span></span> Replaced double division with multiplication &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>calculateCompoundInterest<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateCompoundInterest()]</span></span> Replaced double addition with subtraction &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>calculateCompoundInterest<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateCompoundInterest()]</span></span> Replaced double multiplication with division &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@416c1b0_39'>39</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_39'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>calculateCompoundInterest<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateCompoundInterest()]</span></span> Replaced integer multiplication with division &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@416c1b0_41'>41</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_41'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>calculateCompoundInterest<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateCompoundInterest()]</span></span> replaced double return with 0.0d for com/banking/InvestmentCalculator::calculateCompoundInterest &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>calculateCompoundInterest<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateCompoundInterest()]</span></span> Replaced double division with multiplication &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>calculateCompoundInterest<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateCompoundInterest()]</span></span> Replaced double multiplication with division &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@416c1b0_48'>48</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_48'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>calculateSimpleInterest<br/><b>Killed by : </b>none</span></span> changed conditional boundary &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>calculateSimpleInterest<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateSimpleInterest()]</span></span> negated conditional &rarr; KILLED</p> <p class='SURVIVED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>calculateSimpleInterest<br/><b>Killed by : </b>none</span></span> changed conditional boundary &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>calculateSimpleInterest<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateSimpleInterest()]</span></span> negated conditional &rarr; KILLED</p> <p class='SURVIVED'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b>calculateSimpleInterest<br/><b>Killed by : </b>none</span></span> changed conditional boundary &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>6.<span><b>6</b><br/><b>Location : </b>calculateSimpleInterest<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateSimpleInterest()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@416c1b0_52'>52</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_52'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>calculateSimpleInterest<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateSimpleInterest()]</span></span> Replaced double division with multiplication &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>calculateSimpleInterest<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateSimpleInterest()]</span></span> Replaced double multiplication with division &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>calculateSimpleInterest<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateSimpleInterest()]</span></span> Replaced double multiplication with division &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@416c1b0_53'>53</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_53'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>calculateSimpleInterest<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateSimpleInterest()]</span></span> Replaced double division with multiplication &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>calculateSimpleInterest<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateSimpleInterest()]</span></span> replaced double return with 0.0d for com/banking/InvestmentCalculator::calculateSimpleInterest &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>calculateSimpleInterest<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateSimpleInterest()]</span></span> Replaced double multiplication with division &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@416c1b0_61'>61</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_61'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>calculateROI<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateROILoss()]</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>calculateROI<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateROIInvalidInvestment()]</span></span> changed conditional boundary &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@416c1b0_65'>65</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_65'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>calculateROI<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateROILoss()]</span></span> Replaced double subtraction with addition &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@416c1b0_66'>66</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_66'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>calculateROI<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateROILoss()]</span></span> Replaced double division with multiplication &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>calculateROI<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateROILoss()]</span></span> Replaced double multiplication with division &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@416c1b0_68'>68</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_68'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>calculateROI<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateROILoss()]</span></span> Replaced double multiplication with division &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>calculateROI<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateROILoss()]</span></span> Replaced double division with multiplication &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>calculateROI<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateROILoss()]</span></span> replaced double return with 0.0d for com/banking/InvestmentCalculator::calculateROI &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@416c1b0_76'>76</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_76'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>calculateSIPReturns<br/><b>Killed by : </b>none</span></span> changed conditional boundary &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>calculateSIPReturns<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateSIPReturnsZeroRate()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@416c1b0_79'>79</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_79'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>calculateSIPReturns<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateSIPReturnsInvalidMonths()]</span></span> changed conditional boundary &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>calculateSIPReturns<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateSIPReturnsZeroRate()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@416c1b0_83'>83</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_83'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>calculateSIPReturns<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateSIPReturnsZeroRate()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@416c1b0_84'>84</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_84'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>calculateSIPReturns<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateSIPReturnsZeroRate()]</span></span> Replaced double multiplication with division &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>calculateSIPReturns<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateSIPReturnsZeroRate()]</span></span> replaced double return with 0.0d for com/banking/InvestmentCalculator::calculateSIPReturns &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@416c1b0_87'>87</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_87'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>calculateSIPReturns<br/><b>Killed by : </b>none</span></span> Replaced double division with multiplication &rarr; SURVIVED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@416c1b0_88'>88</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_88'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>calculateSIPReturns<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateSIPReturns()]</span></span> Replaced double multiplication with division &rarr; KILLED</p> <p class='SURVIVED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>calculateSIPReturns<br/><b>Killed by : </b>none</span></span> Replaced double multiplication with division &rarr; SURVIVED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@416c1b0_89'>89</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_89'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>calculateSIPReturns<br/><b>Killed by : </b>none</span></span> Replaced double subtraction with addition &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>calculateSIPReturns<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateSIPReturns()]</span></span> Replaced double addition with subtraction &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>calculateSIPReturns<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateSIPReturns()]</span></span> Replaced double division with multiplication &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@416c1b0_90'>90</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_90'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>calculateSIPReturns<br/><b>Killed by : </b>none</span></span> Replaced double addition with subtraction &rarr; SURVIVED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@416c1b0_92'>92</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_92'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>calculateSIPReturns<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateSIPReturns()]</span></span> Replaced double multiplication with division &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>calculateSIPReturns<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateSIPReturns()]</span></span> replaced double return with 0.0d for com/banking/InvestmentCalculator::calculateSIPReturns &rarr; KILLED</p> <p class='SURVIVED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>calculateSIPReturns<br/><b>Killed by : </b>none</span></span> Replaced double division with multiplication &rarr; SURVIVED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@416c1b0_99'>99</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_99'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>calculateBreakEvenPeriod<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateBreakEvenPeriod()]</span></span> negated conditional &rarr; KILLED</p> <p class='SURVIVED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>calculateBreakEvenPeriod<br/><b>Killed by : </b>none</span></span> changed conditional boundary &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>calculateBreakEvenPeriod<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateBreakEvenPeriodInvalid()]</span></span> negated conditional &rarr; KILLED</p> <p class='SURVIVED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>calculateBreakEvenPeriod<br/><b>Killed by : </b>none</span></span> changed conditional boundary &rarr; SURVIVED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@416c1b0_103'>103</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_103'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>calculateBreakEvenPeriod<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateBreakEvenPeriod()]</span></span> Replaced double division with multiplication &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@416c1b0_104'>104</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_104'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>calculateBreakEvenPeriod<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateBreakEvenPeriod()]</span></span> replaced int return with 0 for com/banking/InvestmentCalculator::calculateBreakEvenPeriod &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@416c1b0_112'>112</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_112'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>isGoalAchievable<br/><b>Killed by : </b>none</span></span> changed conditional boundary &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>isGoalAchievable<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testIsGoalAchievableTrue()]</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>isGoalAchievable<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testIsGoalAchievableTrue()]</span></span> negated conditional &rarr; KILLED</p> <p class='SURVIVED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>isGoalAchievable<br/><b>Killed by : </b>none</span></span> changed conditional boundary &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b>isGoalAchievable<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testIsGoalAchievableInvalidParameters()]</span></span> negated conditional &rarr; KILLED</p> <p class='SURVIVED'><span class='pop'>6.<span><b>6</b><br/><b>Location : </b>isGoalAchievable<br/><b>Killed by : </b>none</span></span> changed conditional boundary &rarr; SURVIVED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@416c1b0_113'>113</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_113'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>isGoalAchievable<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testIsGoalAchievableInvalidParameters()]</span></span> replaced boolean return with true for com/banking/InvestmentCalculator::isGoalAchievable &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@416c1b0_117'>117</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_117'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>isGoalAchievable<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testIsGoalAchievableTrue()]</span></span> replaced boolean return with false for com/banking/InvestmentCalculator::isGoalAchievable &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>isGoalAchievable<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testIsGoalAchievableFalse()]</span></span> replaced boolean return with true for com/banking/InvestmentCalculator::isGoalAchievable &rarr; KILLED</p> <p class='SURVIVED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>isGoalAchievable<br/><b>Killed by : </b>none</span></span> changed conditional boundary &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>isGoalAchievable<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testIsGoalAchievableTrue()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@416c1b0_124'>124</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_124'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>calculateRequiredMonthlySIP<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateRequiredMonthlySIPZeroRate()]</span></span> negated conditional &rarr; KILLED</p> <p class='SURVIVED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>calculateRequiredMonthlySIP<br/><b>Killed by : </b>none</span></span> changed conditional boundary &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>calculateRequiredMonthlySIP<br/><b>Killed by : </b>none</span></span> changed conditional boundary &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>calculateRequiredMonthlySIP<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateRequiredMonthlySIPZeroRate()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@416c1b0_128'>128</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_128'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>calculateRequiredMonthlySIP<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateRequiredMonthlySIPZeroRate()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@416c1b0_129'>129</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_129'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>calculateRequiredMonthlySIP<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateRequiredMonthlySIPZeroRate()]</span></span> replaced double return with 0.0d for com/banking/InvestmentCalculator::calculateRequiredMonthlySIP &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>calculateRequiredMonthlySIP<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateRequiredMonthlySIPZeroRate()]</span></span> Replaced double division with multiplication &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@416c1b0_132'>132</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_132'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>calculateRequiredMonthlySIP<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateRequiredMonthlySIP()]</span></span> Replaced double division with multiplication &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@416c1b0_133'>133</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_133'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>calculateRequiredMonthlySIP<br/><b>Killed by : </b>none</span></span> Replaced double division with multiplication &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>calculateRequiredMonthlySIP<br/><b>Killed by : </b>none</span></span> Replaced double multiplication with division &rarr; SURVIVED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@416c1b0_134'>134</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_134'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>calculateRequiredMonthlySIP<br/><b>Killed by : </b>none</span></span> Replaced double subtraction with addition &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>calculateRequiredMonthlySIP<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateRequiredMonthlySIP()]</span></span> Replaced double addition with subtraction &rarr; KILLED</p> <p class='SURVIVED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>calculateRequiredMonthlySIP<br/><b>Killed by : </b>none</span></span> Replaced double addition with subtraction &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>calculateRequiredMonthlySIP<br/><b>Killed by : </b>none</span></span> Replaced double multiplication with division &rarr; SURVIVED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@416c1b0_136'>136</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_136'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>calculateRequiredMonthlySIP<br/><b>Killed by : </b>none</span></span> Replaced double division with multiplication &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>calculateRequiredMonthlySIP<br/><b>Killed by : </b>none</span></span> Replaced double multiplication with division &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>calculateRequiredMonthlySIP<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateRequiredMonthlySIP()]</span></span> replaced double return with 0.0d for com/banking/InvestmentCalculator::calculateRequiredMonthlySIP &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@416c1b0_143'>143</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_143'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>calculatePortfolioValue<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculatePortfolioValue()]</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>calculatePortfolioValue<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculatePortfolioValue()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@416c1b0_146'>146</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_146'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>calculatePortfolioValue<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculatePortfolioValue()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@416c1b0_151'>151</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_151'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>calculatePortfolioValue<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculatePortfolioValue()]</span></span> changed conditional boundary &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>calculatePortfolioValue<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculatePortfolioValue()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@416c1b0_152'>152</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_152'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>calculatePortfolioValue<br/><b>Killed by : </b>none</span></span> changed conditional boundary &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>calculatePortfolioValue<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculatePortfolioValue()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@416c1b0_155'>155</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_155'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>calculatePortfolioValue<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculatePortfolioValue()]</span></span> Replaced double addition with subtraction &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>calculatePortfolioValue<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculatePortfolioValue()]</span></span> Replaced double multiplication with division &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>calculatePortfolioValue<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculatePortfolioValue()]</span></span> Replaced double addition with subtraction &rarr; KILLED</p> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>calculatePortfolioValue<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculatePortfolioValue()]</span></span> Replaced double division with multiplication &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@416c1b0_158'>158</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_158'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>calculatePortfolioValue<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculatePortfolioValue()]</span></span> Replaced double multiplication with division &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>calculatePortfolioValue<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculatePortfolioValue()]</span></span> replaced double return with 0.0d for com/banking/InvestmentCalculator::calculatePortfolioValue &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>calculatePortfolioValue<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculatePortfolioValue()]</span></span> Replaced double division with multiplication &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@416c1b0_165'>165</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_165'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>calculateDiversificationRatio<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateDiversificationRatioNull()]</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>calculateDiversificationRatio<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateDiversificationRatio()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@416c1b0_173'>173</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_173'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>calculateDiversificationRatio<br/><b>Killed by : </b>none</span></span> changed conditional boundary &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>calculateDiversificationRatio<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateDiversificationRatio()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@416c1b0_176'>176</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_176'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>calculateDiversificationRatio<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateDiversificationRatio()]</span></span> Replaced double addition with subtraction &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@416c1b0_177'>177</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_177'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>calculateDiversificationRatio<br/><b>Killed by : </b>none</span></span> changed conditional boundary &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>calculateDiversificationRatio<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateDiversificationRatio()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@416c1b0_182'>182</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_182'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>calculateDiversificationRatio<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateDiversificationRatio()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@416c1b0_186'>186</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_186'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>calculateDiversificationRatio<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateDiversificationRatio()]</span></span> Replaced double division with multiplication &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>calculateDiversificationRatio<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateDiversificationRatio()]</span></span> Replaced double subtraction with addition &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>calculateDiversificationRatio<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateDiversificationRatio()]</span></span> Replaced double multiplication with division &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@416c1b0_187'>187</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_187'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>calculateDiversificationRatio<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateDiversificationRatio()]</span></span> Replaced double division with multiplication &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>calculateDiversificationRatio<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateDiversificationRatio()]</span></span> replaced double return with 0.0d for com/banking/InvestmentCalculator::calculateDiversificationRatio &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>calculateDiversificationRatio<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateDiversificationRatio()]</span></span> Replaced double multiplication with division &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@416c1b0_194'>194</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_194'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>calculateRealReturn<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateRealReturnHighInflation()]</span></span> changed conditional boundary &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>calculateRealReturn<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateRealReturn()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@416c1b0_198'>198</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_198'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>calculateRealReturn<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateRealReturn()]</span></span> Replaced double division with multiplication &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>calculateRealReturn<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateRealReturn()]</span></span> Replaced double addition with subtraction &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>calculateRealReturn<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateRealReturn()]</span></span> Replaced double addition with subtraction &rarr; KILLED</p> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>calculateRealReturn<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateRealReturn()]</span></span> Replaced double subtraction with addition &rarr; KILLED</p> <p class='KILLED'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b>calculateRealReturn<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateRealReturn()]</span></span> Replaced double division with multiplication &rarr; KILLED</p> <p class='KILLED'><span class='pop'>6.<span><b>6</b><br/><b>Location : </b>calculateRealReturn<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateRealReturn()]</span></span> Replaced double multiplication with division &rarr; KILLED</p> <p class='KILLED'><span class='pop'>7.<span><b>7</b><br/><b>Location : </b>calculateRealReturn<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateRealReturn()]</span></span> Replaced double division with multiplication &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@416c1b0_199'>199</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_199'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>calculateRealReturn<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateRealReturn()]</span></span> Replaced double multiplication with division &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>calculateRealReturn<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateRealReturn()]</span></span> replaced double return with 0.0d for com/banking/InvestmentCalculator::calculateRealReturn &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>calculateRealReturn<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateRealReturn()]</span></span> Replaced double division with multiplication &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@416c1b0_206'>206</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_206'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>assessRiskLevel<br/><b>Killed by : </b>none</span></span> changed conditional boundary &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>assessRiskLevel<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testAssessRiskLevelLow()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@416c1b0_210'>210</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_210'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>assessRiskLevel<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testAssessRiskLevelLow()]</span></span> negated conditional &rarr; KILLED</p> <p class='SURVIVED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>assessRiskLevel<br/><b>Killed by : </b>none</span></span> changed conditional boundary &rarr; SURVIVED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@416c1b0_211'>211</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_211'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>assessRiskLevel<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testAssessRiskLevelLow()]</span></span> replaced return value with &#34;&#34; for com/banking/InvestmentCalculator::assessRiskLevel &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@416c1b0_212'>212</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_212'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>assessRiskLevel<br/><b>Killed by : </b>none</span></span> changed conditional boundary &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>assessRiskLevel<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testAssessRiskLevelVeryHigh()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@416c1b0_213'>213</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_213'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>assessRiskLevel<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testAssessRiskLevelMedium()]</span></span> replaced return value with &#34;&#34; for com/banking/InvestmentCalculator::assessRiskLevel &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@416c1b0_214'>214</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_214'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>assessRiskLevel<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testAssessRiskLevelVeryHigh()]</span></span> negated conditional &rarr; KILLED</p> <p class='SURVIVED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>assessRiskLevel<br/><b>Killed by : </b>none</span></span> changed conditional boundary &rarr; SURVIVED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@416c1b0_215'>215</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_215'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>assessRiskLevel<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testAssessRiskLevelHigh()]</span></span> replaced return value with &#34;&#34; for com/banking/InvestmentCalculator::assessRiskLevel &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@416c1b0_217'>217</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_217'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>assessRiskLevel<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testAssessRiskLevelVeryHigh()]</span></span> replaced return value with &#34;&#34; for com/banking/InvestmentCalculator::assessRiskLevel &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@416c1b0_225'>225</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_225'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>calculateCAGR<br/><b>Killed by : </b>none</span></span> changed conditional boundary &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>calculateCAGR<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateCAGRInvalidValues()]</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>calculateCAGR<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateCAGR()]</span></span> negated conditional &rarr; KILLED</p> <p class='SURVIVED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>calculateCAGR<br/><b>Killed by : </b>none</span></span> changed conditional boundary &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b>calculateCAGR<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateCAGR()]</span></span> negated conditional &rarr; KILLED</p> <p class='SURVIVED'><span class='pop'>6.<span><b>6</b><br/><b>Location : </b>calculateCAGR<br/><b>Killed by : </b>none</span></span> changed conditional boundary &rarr; SURVIVED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@416c1b0_229'>229</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_229'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>calculateCAGR<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateCAGR()]</span></span> Replaced double multiplication with division &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>calculateCAGR<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateCAGR()]</span></span> Replaced double division with multiplication &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>calculateCAGR<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateCAGR()]</span></span> Replaced double subtraction with addition &rarr; KILLED</p> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>calculateCAGR<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateCAGR()]</span></span> Replaced double division with multiplication &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@416c1b0_230'>230</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@416c1b0_230'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>calculateCAGR<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateCAGR()]</span></span> replaced double return with 0.0d for com/banking/InvestmentCalculator::calculateCAGR &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>calculateCAGR<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateCAGR()]</span></span> Replaced double multiplication with division &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>calculateCAGR<br/><b>Killed by : </b>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateCAGR()]</span></span> Replaced double division with multiplication &rarr; KILLED</p> 
+</td>
+</tr>
+
+</table>
+
+
+<h2>Active mutators</h2>
+<ul>
+
+<li class='mutator'>CONDITIONALS_BOUNDARY</li>
+
+<li class='mutator'>EMPTY_RETURNS</li>
+
+<li class='mutator'>FALSE_RETURNS</li>
+
+<li class='mutator'>INCREMENTS</li>
+
+<li class='mutator'>INVERT_NEGS</li>
+
+<li class='mutator'>MATH</li>
+
+<li class='mutator'>NEGATE_CONDITIONALS</li>
+
+<li class='mutator'>NULL_RETURNS</li>
+
+<li class='mutator'>PRIMITIVE_RETURNS</li>
+
+<li class='mutator'>TRUE_RETURNS</li>
+
+<li class='mutator'>VOID_METHOD_CALLS</li>
+
+</ul>
+
+<h2>Tests examined</h2>
+<ul>
+<li>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateSIPReturnsZeroRate()] (0 ms)</li><li>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateSIPReturnsInvalidAmount()] (1 ms)</li><li>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateSIPReturnsInvalidMonths()] (1 ms)</li><li>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateSIPReturns()] (0 ms)</li><li>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateBreakEvenPeriod()] (1 ms)</li><li>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateCAGR()] (0 ms)</li><li>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateRequiredMonthlySIP()] (0 ms)</li><li>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testAssessRiskLevelVeryHigh()] (0 ms)</li><li>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testAssessRiskLevelHigh()] (0 ms)</li><li>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testAssessRiskLevelMedium()] (0 ms)</li><li>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculatePortfolioValue()] (0 ms)</li><li>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateROILoss()] (0 ms)</li><li>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateROIProfit()] (0 ms)</li><li>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateRealReturn()] (0 ms)</li><li>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateSimpleInterest()] (0 ms)</li><li>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateSimpleInterestInvalid()] (1 ms)</li><li>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateRequiredMonthlySIPZeroRate()] (0 ms)</li><li>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testIsGoalAchievableTrue()] (0 ms)</li><li>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testAssessRiskLevelLow()] (0 ms)</li><li>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testAssessRiskLevelNegative()] (1 ms)</li><li>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateCompoundInterestInvalidFrequency()] (0 ms)</li><li>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateCompoundInterest()] (0 ms)</li><li>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateCompoundInterestInvalidYears()] (1 ms)</li><li>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testIsGoalAchievableFalse()] (2 ms)</li><li>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testIsGoalAchievableInvalidParameters()] (0 ms)</li><li>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateRequiredMonthlySIPInvalid()] (1 ms)</li><li>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateRealReturnHighInflation()] (1 ms)</li><li>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateROIInvalidInvestment()] (0 ms)</li><li>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateCompoundInterestInvalidPrincipal()] (0 ms)</li><li>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateCompoundInterestNegativeRate()] (2 ms)</li><li>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateCAGRInvalidValues()] (0 ms)</li><li>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateDiversificationRatio()] (0 ms)</li><li>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateDiversificationRatioSingleInvestment()] (0 ms)</li><li>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateDiversificationRatioNegative()] (1 ms)</li><li>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculatePortfolioValueMismatchedArrays()] (1 ms)</li><li>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculatePortfolioValueNegativeInvestment()] (1 ms)</li><li>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculatePortfolioValueNullArray()] (1 ms)</li><li>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateDiversificationRatioNull()] (0 ms)</li><li>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateDiversificationRatioEmpty()] (1 ms)</li><li>com.banking.InvestmentCalculatorTest.[engine:junit-jupiter]/[class:com.banking.InvestmentCalculatorTest]/[method:testCalculateBreakEvenPeriodInvalid()] (1 ms)</li>
+</ul>
+
+<br/>
+
+Report generated by <a href='https://pitest.org'>PIT</a> 1.15.3
+
+</body>
+</html>

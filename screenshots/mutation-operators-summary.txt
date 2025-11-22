@@ -1,0 +1,46 @@
+================================================================================
+MUTATION OPERATORS SUMMARY
+================================================================================
+
+> org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator
+>> Generated 102 Killed 26 (25%)
+> KILLED 26 SURVIVED 75 TIMED_OUT 0 NON_VIABLE 0
+
+> org.pitest.mutationtest.engine.gregor.mutators.returns.PrimitiveReturnsMutator
+>> Generated 41 Killed 40 (98%)
+> KILLED 40 SURVIVED 0 TIMED_OUT 0 NON_VIABLE 0
+
+> org.pitest.mutationtest.engine.gregor.mutators.IncrementsMutator
+>> Generated 7 Killed 6 (86%)
+> KILLED 6 SURVIVED 1 TIMED_OUT 0 NON_VIABLE 0
+
+> org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator
+>> Generated 46 Killed 42 (91%)
+> KILLED 42 SURVIVED 0 TIMED_OUT 0 NON_VIABLE 0
+
+> org.pitest.mutationtest.engine.gregor.mutators.InvertNegsMutator
+>> Generated 1 Killed 1 (100%)
+> KILLED 1 SURVIVED 0 TIMED_OUT 0 NON_VIABLE 0
+
+> org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+>> Generated 135 Killed 113 (84%)
+> KILLED 113 SURVIVED 22 TIMED_OUT 0 NON_VIABLE 0
+
+> org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator
+>> Generated 5 Killed 5 (100%)
+> KILLED 5 SURVIVED 0 TIMED_OUT 0 NON_VIABLE 0
+
+> org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanFalseReturnValsMutator
+>> Generated 27 Killed 26 (96%)
+> KILLED 26 SURVIVED 0 TIMED_OUT 0 NON_VIABLE 0
+
+> org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+>> Generated 158 Killed 153 (97%)
+> KILLED 153 SURVIVED 4 TIMED_OUT 0 NON_VIABLE 0
+
+================================================================================
+OVERALL SUMMARY
+================================================================================
+>> Generated 522 mutations Killed 412 (79%)
+>> Mutations with no coverage 8. Test strength 80%
+================================================================================
